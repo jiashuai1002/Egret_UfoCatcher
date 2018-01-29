@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgChooseRoom" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="dlg_bg2_png" y="254.46" horizontalCenter="0.5"/>
+	<e:Image source="ui_json.dlg_border1" y="303.5" anchorOffsetX="0" width="563" scale9Grid="35,34,6,6" height="598" x="39"/>
+	<e:Scroller width="563" height="598" y="303.5" anchorOffsetX="0" anchorOffsetY="0" x="38">
+		<e:Group id="group">
+			<e:layout>
+				<e:TileLayout requestedColumnCount="2" paddingLeft="19" paddingTop="22" verticalGap="12" horizontalGap="14"/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+	<ns1:Button id="changeBtn" label="" y="944.98" x="320.5" anchorOffsetX="67.5" anchorOffsetY="34.5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.change_btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+</e:Skin>

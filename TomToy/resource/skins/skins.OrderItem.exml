@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.OrderItem" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="526" height="96">
+	<e:Image source="ui_json.line" y="93" horizontalCenter="2"/>
+	<e:Label id="toy" text="-" x="28" textColor="0x8C5900" size="26" bold="true" top="25"/>
+	<e:Label id="time" text="-" x="28" textColor="0x8C5900" size="18" top="58"/>
+	<e:Label text="1-5天内发货" x="318" textColor="0x8C5900" size="26" bold="true" top="36"/>
+</e:Skin>

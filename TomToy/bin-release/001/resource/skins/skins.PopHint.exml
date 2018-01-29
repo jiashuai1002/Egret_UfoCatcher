@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PopHint" width="640" height="1136" xmlns:e="http://ns.egret.com/eui">
+    <e:Group id="con" horizontalCenter="0" minWidth="200" verticalCenter="0">
+        <e:Rect height="90" ellipseWidth="50" ellipseHeight="50" strokeColor="0x332121" anchorOffsetX="0"
+                fillColor="0x000000" y="0" left="0" right="0" alpha="0.8" />
+        <e:Label id="content" textAlign="center" text="" anchorOffsetY="0" size="20" scaleX="1" scaleY="1"
+                 textColor="0xffffff" left="20" right="20" width="180" verticalCenter="0"  lineSpacing="5"/>
+    </e:Group>
+</e:Skin>

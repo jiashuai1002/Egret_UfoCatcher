@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.ToyItem" xmlns:e="http://ns.egret.com/eui" height="273" width="256">
+	<e:Image source="ui_json.room_bg" x="0" y="0" scale9Grid="37,34,14,205" anchorOffsetX="0" width="256"/>
+	<e:Image id="icon" scale9Grid="37,34,14,205" anchorOffsetX="0" width="256" source=""/>
+	<e:Image id="iconMask" source="ui_json.room_mask" scale9Grid="32,37,2,2" width="248" height="194" x="4" y="0"/>
+	<e:Label id="toy" text="-" textColor="0x8C5900" textAlign="center" anchorOffsetX="0" width="210" y="216" x="23" size="24"/>
+</e:Skin>

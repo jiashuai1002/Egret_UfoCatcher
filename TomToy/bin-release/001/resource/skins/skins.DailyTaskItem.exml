@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DailyTaskItem" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" width="530" height="98">
+	<e:Image source="ui_json.item_bg" y="6" scale9Grid="40,32,12,13" anchorOffsetX="0" width="528" x="1"/>
+	<e:Image id="coinIcon" x="12" y="20" source="ui_json.coin1"/>
+	<e:Label id="taskName" text="-" x="75" y="23" textColor="0x8C5900" bold="true" size="24"/>
+	<e:Label id="desc" text="-" x="76" y="53" textColor="0x8C5900" size="20"/>
+	<ns1:Button id="drawBtn" label="" x="449.5" y="46.5" anchorOffsetX="67.5" anchorOffsetY="34.5">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_draw"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Image id="finished" source="ui_json.btn_finish" x="382" y="12"/>
+	<e:Label id="unFinished" text="未达成" x="403" textColor="0x8C5900" bold="true" verticalCenter="-1.5"/>
+</e:Skin>

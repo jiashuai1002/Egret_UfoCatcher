@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.NewGiftItem" width="530" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" height="141">
+	<e:Image source="ui_json.item_bg" y="6" scale9Grid="40,32,12,13" anchorOffsetX="0" width="528" x="1" anchorOffsetY="0" height="135"/>
+	<ns1:Button id="btn" label="¥ 4.9" x="443.5" y="66.5" anchorOffsetX="67.5" anchorOffsetY="34.5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:w="http://ns.egret.com/wing" size="28" strokeColor="0x3ea603" stroke="3"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Image id="finished" source="ui_json.btn_finish" x="376" y="32" visible="false"/>
+	<e:Image id="icon" source="ui_json.new_gift_icon" x="18" y="18"/>
+	<e:Image x="153" y="63" source=""/>
+	<e:Label id="desc" text="-" x="149" y="29" textColor="0x996a38" size="32" bold="true"/>
+</e:Skin>

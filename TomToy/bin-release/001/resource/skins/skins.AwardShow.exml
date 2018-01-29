@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.AwardShow" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="show_bg_png" top="0" horizontalCenter="0"/>
+	<e:Image id="image" top="328" source="" anchorOffsetX="0" anchorOffsetY="0" height="264" horizontalCenter="0"/>
+	<e:Image source="ui_json.show_shadow" y="579.67" horizontalCenter="0.5"/>
+	<e:Group x="102.5" y="660">
+		<e:Image source="ui_json.show_name_bg" x="0" y="0"/>
+		<e:Label id="toy" text="-" y="30" size="36" width="340" textAlign="center" bold="true" x="47.5"/>
+	</e:Group>
+	<e:Group x="-19" y="744">
+		<e:Image source="ui_json.show_info_bg" y="30" x="0"/>
+		<ns1:Head id="head" width="130" height="130" x="26" y="45"/>
+		<e:Image source="ui_json.bear" x="559" y="0"/>
+		<e:Label id="nickname" text="-" y="56" size="36" textAlign="left" x="175" textColor="0x996a38" bold="true"/>
+		<e:Label id="desc" text="-" y="100" size="24" textAlign="left" x="177" textColor="0x996A38" bold="true"/>
+	</e:Group>
+	<e:Group x="-19" y="972">
+		<e:Image source="ui_json.show_info_bg" y="0" x="0"/>
+		<e:Rect width="154" height="154" anchorOffsetX="0" anchorOffsetY="0" x="20" y="2" fillColor="0xffffff"/>
+		<e:Image id="qrcode" source="" width="150" height="150" x="22" y="4"/>
+		<e:Label text="长按图片发送到好友群/保存发朋友圈 \n好友扫码进入游戏抓娃娃" y="44" size="30" textAlign="left" x="183" textColor="0x996A38" bold="true" scaleX="1" scaleY="1" lineSpacing="10"/>
+	</e:Group>
+</e:Skin>

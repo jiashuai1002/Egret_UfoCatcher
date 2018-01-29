@@ -1,0 +1,242 @@
+{
+	"groups": [
+		{
+			"keys": "lucky_fnt,bullet_json,config_json,game_json,ui_json,box_bg_png,box_front_png,box_glass_png,dlg_bg1_png,dlg_bg2_png,glass_png,dlg_bg3_png,title_bag_png,title_catch_png,title_bind_png,title_info_png,title_notice_png,title_login_png,title_gift_png,title_invite_png,title_task_png,title_charge_png,time_fnt,help_bg_png,player_show_head_png,title_show_png,wordart_json,music_mp3,move_mp3,fail_mp3,suc_mp3,start_mp3,loading_show_png,share_1_png,share_2_png,share_3_png,share_close_png,show_bg_png",
+			"name": "preload"
+		},
+		{
+			"keys": "config_json,loading_bar_bg_png,loading_bar_png,loading_bg_png,player_show_png,login_bg_png,btn_qq_png,btn_wx_png",
+			"name": "loading"
+		}
+	],
+	"resources": [
+		{
+			"name": "ui_json",
+			"subkeys": "add_off,add_on,arrow,bag_coin,bag_coin1,bag_tab1_off,bag_tab1_on,bag_tab2_off,bag_tab2_on,bear,btn,btn_bind,btn_close,btn_close1,btn_code,btn_draw,btn_finish,btn_help,btn_invite,btn_next,btn_pick,btn_quit,btn_share,btn_show,btn_sub,bullet_off,bullet_on,change_btn,coin,coin1,dlg_border1,dlg_border2,gift_hint,info_tab1_off,info_tab1_on,info_tab2_off,info_tab2_on,input,item_bg,line,music_off,music_on,new_gift_icon,pay_ali,pay_wx,room_bg,room_mask,share_banner,show_info_bg,show_name_bg,show_shadow,sub_off,sub_on,task_bar,task_bar_bg",
+			"type": "sheet",
+			"url": "atlas/ui.json"
+		},
+		{
+			"name": "game_json",
+			"subkeys": "bind,bullet_bg,catch,catch_tap,change,change_tap,cion,circle,coin_bg,cross,daily_gift,daily_task,em_down1,em_down2,em_down3,em_down4,em_down5,em_stay1,em_stay2,em_stay3,em_stay4,em_stay5,em_stay6,em_stay7,em_stay8,em_up1,em_up2,em_up3,em_up4,em_up5,full,gift_bg,hand,hand_line,hand_roof,hand_root,head,icon_bag,icon_recharge,icon_setting,icon_show,info_btn,invite,light_1,light_2,lucky,lucky_border,luckybar,luckybar_bg,new_gift,shadow,start,start_tap,time_bg,users_bg",
+			"type": "sheet",
+			"url": "atlas/game.json"
+		},
+		{
+			"name": "bullet_json",
+			"type": "json",
+			"url": "data/bullet.json"
+		},
+		{
+			"name": "config_json",
+			"type": "json",
+			"url": "data/config.json"
+		},
+		{
+			"name": "lucky_fnt",
+			"type": "font",
+			"url": "font/lucky.fnt"
+		},
+		{
+			"name": "box_bg_png",
+			"type": "image",
+			"url": "image/box_bg.png"
+		},
+		{
+			"name": "box_front_png",
+			"type": "image",
+			"url": "image/box_front.png"
+		},
+		{
+			"name": "box_glass_png",
+			"type": "image",
+			"url": "image/box_glass.png"
+		},
+		{
+			"name": "dlg_bg1_png",
+			"type": "image",
+			"url": "image/dlg_bg1.png"
+		},
+		{
+			"name": "dlg_bg2_png",
+			"type": "image",
+			"url": "image/dlg_bg2.png"
+		},
+		{
+			"name": "glass_png",
+			"type": "image",
+			"url": "image/glass.png"
+		},
+		{
+			"name": "loading_bar_png",
+			"type": "image",
+			"url": "image/loading_bar.png"
+		},
+		{
+			"name": "loading_bar_bg_png",
+			"type": "image",
+			"url": "image/loading_bar_bg.png"
+		},
+		{
+			"name": "loading_bg_png",
+			"type": "image",
+			"url": "image/loading_bg.png"
+		},
+		{
+			"name": "player_show_png",
+			"type": "image",
+			"url": "image/player_show.png"
+		},
+		{
+			"name": "dlg_bg3_png",
+			"type": "image",
+			"url": "image/dlg_bg3.png"
+		},
+		{
+			"name": "title_bag_png",
+			"type": "image",
+			"url": "image/title_bag.png"
+		},
+		{
+			"name": "title_catch_png",
+			"type": "image",
+			"url": "image/title_catch.png"
+		},
+		{
+			"name": "title_bind_png",
+			"type": "image",
+			"url": "image/title_bind.png"
+		},
+		{
+			"name": "title_info_png",
+			"type": "image",
+			"url": "image/title_info.png"
+		},
+		{
+			"name": "title_notice_png",
+			"type": "image",
+			"url": "image/title_notice.png"
+		},
+		{
+			"name": "title_login_png",
+			"type": "image",
+			"url": "image/title_login.png"
+		},
+		{
+			"name": "title_gift_png",
+			"type": "image",
+			"url": "image/title_gift.png"
+		},
+		{
+			"name": "title_invite_png",
+			"type": "image",
+			"url": "image/title_invite.png"
+		},
+		{
+			"name": "title_task_png",
+			"type": "image",
+			"url": "image/title_task.png"
+		},
+		{
+			"name": "title_charge_png",
+			"type": "image",
+			"url": "image/title_charge.png"
+		},
+		{
+			"name": "time_fnt",
+			"type": "font",
+			"url": "font/time.fnt"
+		},
+		{
+			"name": "help_bg_png",
+			"type": "image",
+			"url": "image/help_bg.png"
+		},
+		{
+			"name": "player_show_head_png",
+			"type": "image",
+			"url": "image/player_show_head.png"
+		},
+		{
+			"name": "title_show_png",
+			"type": "image",
+			"url": "image/title_show.png"
+		},
+		{
+			"name": "wordart_json",
+			"subkeys": "fail_hint1,fail_hint10,fail_hint2,fail_hint3,fail_hint4,fail_hint5,fail_hint6,fail_hint7,fail_hint8,fail_hint9",
+			"type": "sheet",
+			"url": "atlas/wordart.json"
+		},
+		{
+			"name": "music_mp3",
+			"type": "sound",
+			"url": "sound/music.mp3"
+		},
+		{
+			"name": "move_mp3",
+			"type": "sound",
+			"url": "sound/move.mp3"
+		},
+		{
+			"name": "fail_mp3",
+			"type": "sound",
+			"url": "sound/fail.mp3"
+		},
+		{
+			"name": "suc_mp3",
+			"type": "sound",
+			"url": "sound/suc.mp3"
+		},
+		{
+			"name": "start_mp3",
+			"type": "sound",
+			"url": "sound/start.mp3"
+		},
+		{
+			"name": "loading_show_png",
+			"type": "image",
+			"url": "image/loading_show.png"
+		},
+		{
+			"name": "login_bg_png",
+			"type": "image",
+			"url": "image/login_bg.png"
+		},
+		{
+			"name": "btn_qq_png",
+			"type": "image",
+			"url": "image/btn_qq.png"
+		},
+		{
+			"name": "btn_wx_png",
+			"type": "image",
+			"url": "image/btn_wx.png"
+		},
+		{
+			"name": "share_1_png",
+			"type": "image",
+			"url": "image/share_1.png"
+		},
+		{
+			"name": "share_2_png",
+			"type": "image",
+			"url": "image/share_2.png"
+		},
+		{
+			"name": "share_3_png",
+			"type": "image",
+			"url": "image/share_3.png"
+		},
+		{
+			"name": "share_close_png",
+			"type": "image",
+			"url": "image/share_close.png"
+		},
+		{
+			"name": "show_bg_png",
+			"type": "image",
+			"url": "image/show_bg.png"
+		}
+	]
+}

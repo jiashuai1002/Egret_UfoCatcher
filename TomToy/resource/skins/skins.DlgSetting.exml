@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgSetting" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="help_bg_png" y="247" x="149"/>
+	<ns1:Button id="closeBtn" label="" x="468" y="275" anchorOffsetX="16" anchorOffsetY="16">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close1"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="soundBtn" label="" y="373.5" horizontalCenter="0.5" anchorOffsetX="103.5" anchorOffsetY="34.5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.music_off"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="bulletBtn" label="" y="454.50333333333356" horizontalCenter="0.5" anchorOffsetX="103.5" anchorOffsetY="34.5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.bullet_off"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="helpBtn" label="" y="531.4966666666671" horizontalCenter="0.5" anchorOffsetX="100.5" anchorOffsetY="31.5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_help"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="quitBtn" label="" y="606.5" horizontalCenter="0.5" anchorOffsetX="100.5" anchorOffsetY="31.5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_quit"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+</e:Skin>

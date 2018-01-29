@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgInvite" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="256" touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="802" width="618" horizontalCenter="0"/>
+	<e:Image y="461" scale9Grid="20,20,20,20" anchorOffsetY="0" height="563" anchorOffsetX="0" width="564" source="ui_json.dlg_border1" horizontalCenter="0"/>
+	<e:Image y="314" horizontalCenter="0.5" source="ui_json.share_banner"/>
+	<ns1:Button id="drawBtn" label="" x="516.5" y="378.5" anchorOffsetX="67.5" anchorOffsetY="34.5">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_draw"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="shareBtn" label="" x="516.5" y="378.5" anchorOffsetX="64.5" anchorOffsetY="31.5">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_share"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Image y="56.2" horizontalCenter="-3.5" source="title_invite_png" touchEnabled="false"/>
+	<e:Scroller width="530" height="562" y="462" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group>
+		<e:List id="list" y="15" width="530" horizontalCenter="0"/>
+		</e:Group>
+	</e:Scroller>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+</e:Skin>

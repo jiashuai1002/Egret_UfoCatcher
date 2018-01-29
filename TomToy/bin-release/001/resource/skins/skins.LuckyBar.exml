@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.LuckyBar" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="game_json.luckybar_bg" y="0" scale9Grid="38,4,26,28" anchorOffsetX="0" width="384" x="0"/>
+	<e:Image id="bar" source="game_json.luckybar" x="4" y="2.5" scale9Grid="20,3,57,24" width="376"/>
+	<e:Label text="幸运值：    / 100" size="20" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="lucky" text="0" size="20" verticalCenter="0" x="187" width="40" textAlign="center"/>
+</e:Skin>

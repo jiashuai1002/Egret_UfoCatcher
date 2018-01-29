@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.NoticeItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="530">
+	<e:Image anchorOffsetX="0" width="517" anchorOffsetY="0" scale9Grid="50,31,9,8" top="0" bottom="0" horizontalCenter="0" source="ui_json.item_bg"/>
+	<e:Label id="title" text="-" x="40" textColor="0x8c5900" size="36" bold="true" top="18"/>
+	<e:Label id="content" text="-" x="40" textColor="0x8C5900" size="26" anchorOffsetX="0" width="446.67" lineSpacing="7" top="65" bottom="15"/>
+</e:Skin>

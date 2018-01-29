@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgCatchToy" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="256" touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="802" width="618" horizontalCenter="0"/>
+	<e:Image y="330" scale9Grid="20,20,20,20" anchorOffsetY="0" height="702" anchorOffsetX="0" width="564" horizontalCenter="0" source="ui_json.dlg_border2"/>
+	<e:Image y="27.2" horizontalCenter="2.5" source="title_catch_png"/>
+	<e:Image id="toy" y="372" source="" anchorOffsetX="0" anchorOffsetY="0" height="346" horizontalCenter="0"/>
+	<e:Label id="content" text="-" y="741" bold="true" textColor="0x8c5900" size="36" width="400" textAlign="center" x="120"/>
+	<e:Label id="desc" text="-" y="787" textColor="0x8C5900" size="26" width="500" textAlign="center" anchorOffsetX="0" horizontalCenter="0"/>
+	<ns1:Button id="showBtn" label="" y="908" x="320" anchorOffsetX="126" anchorOffsetY="43">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_show"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+</e:Skin>

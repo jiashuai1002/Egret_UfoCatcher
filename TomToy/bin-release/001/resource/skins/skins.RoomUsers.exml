@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.RoomUsers" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="game_json.users_bg" x="0" y="0" scale9Grid="27,18,11,4" anchorOffsetY="0" height="218"/>
+	<e:Label id="userCnt" text="188人" y="9.66" size="12" textColor="0x444444" width="44" textAlign="center" x="0"/>
+	<e:Label text="在房间" y="24.99" size="12" textColor="0x444444" width="44" textAlign="center" x="0"/>
+	<e:Group x="4" y="43" id="headGroup">
+		<ns1:Head width="36" height="36" x="0" y="0"/>
+		<ns1:Head width="36" height="36" x="0" y="42.33"/>
+		<ns1:Head width="36" height="36" x="0" y="84.67"/>
+		<ns1:Head width="36" height="36" x="0" y="127.02"/>
+	</e:Group>
+</e:Skin>

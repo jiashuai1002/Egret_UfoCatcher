@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.GameTimer" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="game_json.time_bg" y="0" x="0"/>
+	<e:BitmapLabel id="time" y="36.23" font="time_fnt" text="1" letterSpacing="6" horizontalCenter="0"/>
+</e:Skin>

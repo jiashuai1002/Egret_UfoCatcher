@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgDailyTask" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image y="256" touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="802" width="618" horizontalCenter="0"/>
+	<e:Image y="446" scale9Grid="20,20,20,20" anchorOffsetY="0" height="578" anchorOffsetX="0" width="564" source="ui_json.dlg_border1" horizontalCenter="0"/>
+	<e:Image source="title_task_png" y="50.2" horizontalCenter="8.5"/>
+	<e:Label text="任务积分满      随机领取1个娃娃" y="338" bold="true" textColor="0x8c5900" horizontalCenter="0"/>
+	<e:Label text="100" y="340" bold="true" horizontalCenter="-40.5" textColor="0x881a05" size="28"/>
+	<e:Image source="ui_json.task_bar_bg" y="373" scale9Grid="31,6,5,42" anchorOffsetX="0" width="534" horizontalCenter="2"/>
+	<e:Image id="bar" source="ui_json.task_bar" y="378" scale9Grid="32,5,18,34" anchorOffsetX="0" width="524" horizontalCenter="2"/>
+	<e:Label id="progress" text="60/100" y="389" textColor="0x8c5900" size="24" horizontalCenter="0"/>
+	<e:Scroller width="530" height="578" y="446" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Group>
+			<e:List id="list" y="15" width="530" horizontalCenter="0"/>
+		</e:Group>
+	</e:Scroller>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+</e:Skin>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PickItem" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="526" height="96">
+	<e:Image source="ui_json.line" y="93" horizontalCenter="2"/>
+	<e:Label id="toy" text="-" x="13" textColor="0x8C5900" size="30" bold="true" top="37"/>
+	<ns1:Button id="addBtn" label="" y="51" x="474.5" anchorOffsetX="28.5" anchorOffsetY="28">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.add_on" source.disabled="ui_json.add_off"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="subBtn" label="" y="51" x="291.5" anchorOffsetX="28.5" anchorOffsetY="28">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.sub_on" source.disabled="ui_json.sub_off"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Image source="ui_json.input" y="26" scale9Grid="34,17,17,8" anchorOffsetX="0" width="98" anchorOffsetY="0" height="48" x="333.5"/>
+	<e:Label id="count" text="1" x="348" y="35" textColor="0x996a38" anchorOffsetX="0" width="70" textAlign="center"/>
+</e:Skin>

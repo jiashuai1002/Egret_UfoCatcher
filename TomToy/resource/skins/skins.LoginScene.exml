@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.LoginScene" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="login_bg_png" horizontalCenter="0" verticalCenter="2"/>
+	<ns1:Button id="qqBtn" label="" y="1006" horizontalCenter="0.5" anchorOffsetX="138.5" anchorOffsetY="50">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_qq_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="wxBtn" label="" y="889" horizontalCenter="0.5" anchorOffsetX="138.5" anchorOffsetY="50">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_wx_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+</e:Skin>

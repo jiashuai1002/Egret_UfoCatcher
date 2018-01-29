@@ -1,0 +1,10 @@
+{
+    "useClip": false,
+    "maxImageWidth": 2048,
+    "maxImageHeight": 2048,
+    "defaultResPath": "d:\\egret\\TomToy\\resource\\default.res.json",
+    "packGroups": {
+        "preload": true,
+        "loading": true
+    }
+}

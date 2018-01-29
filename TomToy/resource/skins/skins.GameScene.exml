@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.GameScene" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="box_bg_png" y="41.33" alpha="1" x="70"/>
+	<ns1:ToyWorld id="toyWorld" width="0" height="0" y="645" horizontalCenter="0"/>
+	<e:Image source="glass_png" x="42" y="557.17"/>
+	<e:Component id="awardCon" y="645" horizontalCenter="0"/>
+	<e:Image source="box_glass_png" horizontalCenter="0" verticalCenter="0"/>
+	<ns1:RoomUsers id="roomUsers" x="523.64" y="348" skinName="skins.RoomUsers"/>
+	<e:Image id="front" source="box_front_png" y="0" alpha="1" horizontalCenter="0"/>
+	<ns1:Lamp id="leftLamp" x="0" y="67" skinName="skins.Lamp"/>
+	<ns1:Lamp id="rightLamp" x="606" y="67" skinName="skins.Lamp"/>
+	<ns1:LuckyBar id="luckyBar" y="764" skinName="skins.LuckyBar" horizontalCenter="0"/>
+	<e:Label id="topTips" text="" y="5.31" size="24" textColor="0x8c5900" horizontalCenter="1"/>
+	<e:Label id="bottomTips" text="" y="812.02" horizontalCenter="2.5" size="20" textColor="0x8C5900"/>
+	<e:Group id="startGroup" width="0" height="0" y="921.28" horizontalCenter="9.5">
+		<e:Button id="startBtn" label="" horizontalCenter="-4.5" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="game_json.start" source.down="game_json.start_tap"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="changeBtn" label="" x="156.64" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="game_json.change" source.down="game_json.change_tap"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image x="-291.99" scaleX="1" scaleY="1" verticalCenter="3.5" source="game_json.circle"/>
+		<e:Image source="game_json.cion" x="-294.61" scaleX="1" scaleY="1" verticalCenter="4"/>
+		<e:Label id="cost" text="-/次" x="-250" y="-4" scaleX="1" scaleY="1" size="20" textColor="0x8c5900" width="55" textAlign="center"/>
+	</e:Group>
+	<e:Group id="operateGroup" width="0" height="0" y="921.28" horizontalCenter="9.5" visible="false">
+		<e:Image source="game_json.cross" x="-258.71" scaleX="1" scaleY="1" verticalCenter="-0.5"/>
+		<e:Button id="catchBtn" label="" horizontalCenter="151" verticalCenter="-0.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="game_json.catch" source.down="game_json.catch_tap"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group x="-259.62" y="-81.91">
+			<e:Rect id="upBtn" width="88.88" height="51.99" x="94.26" y="0" scaleX="1.02" scaleY="0.91" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+			<e:Rect id="downBtn" width="92.16" height="68.84" x="74.92" y="93.97" scaleX="1.02" scaleY="0.91" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+			<e:Rect id="leftBtn" width="71.9" height="71.77" x="0" y="44.41" scaleX="1.02" scaleY="0.91" anchorOffsetX="0" anchorOffsetY="0" alpha="0" rotation="0"/>
+			<e:Rect id="rightBtn" width="83" height="70.31" x="176.95" y="45.33" scaleX="1.02" scaleY="0.91" anchorOffsetX="0" anchorOffsetY="0" alpha="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Label text="娃娃掉落与幸运值无关，幸运值是为了给各位大大保底的哦	" y="815.66" scaleX="1" scaleY="1" size="18" textColor="0x8C5900" textAlign="center" horizontalCenter="0"/>
+	<ns1:GameTips id="tips" text="" y="6.31" textColor="0x8c5900" horizontalCenter="0.5" size="20"/>
+	<ns1:BulletView id="bulletView" y="140" left="0" right="0"/>
+	<ns1:UserInfo x="0" y="1030" skinName="skins.UserInfo"/>
+	<ns1:Button id="infoBtn" label="" x="552.68" y="762.17" anchorOffsetX="57.5" anchorOffsetY="58.5">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="game_json.info_btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:FunctionButtons x="180" y="1030" skinName="skins.FunctionButtons"/>
+	<ns1:GiftButtons id="giftBtns" x="-5" skinName="skins.GiftButtons" bottom="425"/>
+	<ns1:GameTimer id="gameTimer" y="86" skinName="skins.GameTimer" x="263"/>
+	<ns1:FailHint id="failHint" y="538.68" source="wordart_json.fail_hint1" horizontalCenter="0"/>
+	<ns1:LuckyHint id="luckyHint" y="759" skinName="skins.LuckyHint" x="319" anchorOffsetX="140" anchorOffsetY="124"/>
+</e:Skin>

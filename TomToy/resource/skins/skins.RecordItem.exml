@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.RecordItem" width="530" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="ui_json.line" y="93" horizontalCenter="2"/>
+	<ns1:Head id="head" width="64" height="64" x="25" y="14"/>
+	<e:Label id="nickName" text="-" x="108" textColor="0x8C5900" size="30" bold="true" top="17"/>
+	<e:Label text="抓到" x="108" textColor="0x8C5900" size="20" top="50"/>
+	<e:Label id="toy" text="-" x="154.5" size="20" top="50" textColor="0xfe57a4"/>
+	<e:Label id="time" text="1小时" x="406" textColor="0x8C5900" size="24" y="32"/>
+</e:Skin>

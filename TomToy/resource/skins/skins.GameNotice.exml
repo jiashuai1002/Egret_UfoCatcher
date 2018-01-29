@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.GameNotice" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="bg" source="game_json.bullet_bg" anchorOffsetX="0" width="508" anchorOffsetY="0" height="90" x="0" scale9Grid="27,27,5,5" y="0"/>
+	<ns1:Head id="head" width="64" height="64" x="20" y="13"/>
+	<e:Label id="content" text="" y="17" size="24" textColor="0xFFFFFF" x="113" anchorOffsetX="0" width="362" textAlign="center" verticalAlign="middle" lineSpacing="12"/>
+</e:Skin>

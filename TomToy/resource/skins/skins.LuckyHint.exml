@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.LuckyHint" xmlns:e="http://ns.egret.com/eui">
+	<e:Image anchorOffsetY="0" scaleX="1" scaleY="1" y="0" x="0" source="game_json.lucky_border"/>
+	<e:Label text="满100抓娃娃必中哦！" size="28" textAlign="center" scaleX="1" scaleY="1" y="66" textColor="0x8C5900" x="11"/>
+	<e:Image source="game_json.lucky" x="22" y="15"/>
+	<e:BitmapLabel id="luckyAdd" x="163.4" y="19" text="+15" anchorOffsetX="0" anchorOffsetY="0" font="lucky_fnt" letterSpacing="5"/>
+	<e:Image id="luckyFull" source="game_json.full" x="157" y="15" visible="false"/>
+</e:Skin>

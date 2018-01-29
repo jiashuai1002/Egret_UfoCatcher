@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgBag" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="256" touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="802" width="618" horizontalCenter="0"/>
+	<e:Image y="51" horizontalCenter="-26.5" source="title_bag_png"/>
+	<e:Group id="bagView" x="37" y="333">
+		<e:Image source="ui_json.dlg_border2" y="59" scale9Grid="24,25,7,6" anchorOffsetX="0" width="566" anchorOffsetY="0" height="630" x="0"/>
+		<e:ToggleButton id="toyTab" label="" y="0" x="73">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ui_json.bag_tab1_off" source.disabled="ui_json.bag_tab1_on"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:ToggleButton>
+		<e:ToggleButton id="orderTab" label="" y="0" x="287">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ui_json.bag_tab2_off" source.disabled="ui_json.bag_tab2_on"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:ToggleButton>
+		<e:Group id="orderView" x="18" y="61">
+			<e:Scroller width="530" height="477.52" anchorOffsetX="0" anchorOffsetY="0" x="0" y="86.36">
+			<e:Group y="-1.52">
+				<e:List id="orderList" width="530" horizontalCenter="0"/>
+			</e:Group>
+			</e:Scroller>
+			<e:Label id="orderHint" text="您还没有提取记录哦~" y="240" textColor="0x8C5900" width="400" textAlign="center" x="65"/>
+			<e:Label text="提取内容" y="38" textColor="0x8C5900" x="32" bold="true"/>
+			<e:Label text="当前状态" y="38" textColor="0x8C5900" x="315" bold="true"/>
+			<e:Label text="加客服QQ：1362580883了解更多信息" y="577.28" textColor="0x8C5900" x="8"/>
+		</e:Group>
+		<e:Group id="toyView" x="18" y="61">
+			<e:Label id="toyHint" text="还没有娃娃，继续努力" y="240" textColor="0x8c5900" width="400" textAlign="center" horizontalCenter="0"/>
+			<e:Scroller width="530" height="626" y="0" anchorOffsetX="0" anchorOffsetY="0" x="0">
+			<e:Group id="toyGroup">
+				<e:layout>
+				<e:TileLayout paddingLeft="2" paddingTop="18" horizontalGap="14" verticalGap="11"/>
+				</e:layout>
+			</e:Group>
+			</e:Scroller>
+			<ns1:Button id="pickBtn" label="" y="614.33" anchorOffsetX="93" anchorOffsetY="34.5" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ui_json.btn_pick"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+			</ns1:Button>
+		</e:Group>
+	</e:Group>
+	<e:Group id="drawView" x="37" y="320">
+		<e:Image source="ui_json.dlg_border2" y="0" scale9Grid="24,25,7,6" anchorOffsetX="0" width="566" anchorOffsetY="0" height="702" x="0"/>
+		<e:Group id="pickView" x="18" y="34">
+			<e:Label text="提取娃娃" y="0" textColor="0x8C5900" size="36" x="192" bold="true"/>
+			<e:Label text="请填写提取数量" y="45" textColor="0x8C5900" size="24" x="181"/>
+			<e:Label id="pickHint" text="您提取的娃娃数量未达到2个，需支付100金币作为邮费！" y="550.88" textColor="0x8C5900" size="30" bold="true" anchorOffsetX="0" width="421" textAlign="center" lineSpacing="3" horizontalCenter="0"/>
+			<e:Scroller width="530" height="452.52" anchorOffsetX="0" anchorOffsetY="0" y="84" scaleX="1" scaleY="1" x="0">
+			<e:Group y="-1.52">
+				<e:List id="pickList" width="530" horizontalCenter="0"/>
+			</e:Group>
+			</e:Scroller>
+			<ns1:Button id="nextBtn" label="" y="654" anchorOffsetX="93" anchorOffsetY="34.5" horizontalCenter="0">
+			<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ui_json.btn_next"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</ns1:skinName>
+			</ns1:Button>
+		</e:Group>
+		<e:Group id="infoView" x="18" y="34" width="530">
+			<e:Label text="提取娃娃" y="0" textColor="0x8C5900" bold="true" size="36" horizontalCenter="0"/>
+			<e:Label text="请填写收货地址" y="45" textColor="0x8C5900" size="24" horizontalCenter="0"/>
+			<e:Group y="107" x="150">
+			<e:Label text="姓名：" y="11.34" textColor="0x8C5900" x="-111" bold="true" size="36"/>
+			<e:Image source="ui_json.input" y="0" scale9Grid="34,17,17,8" anchorOffsetX="0" width="343" anchorOffsetY="0" height="60" x="0"/>
+			<e:EditableText id="nameText" text="" y="16.94" textColor="0x996A38" anchorOffsetX="0" width="315" promptColor="0x996A38" prompt="请输入姓名" x="14.02" textAlign="left" size="24"/>
+			</e:Group>
+			<e:Group y="186" x="150">
+			<e:Label text="手机：" y="11.34" textColor="0x8C5900" x="-111" bold="true" size="36"/>
+			<e:Image source="ui_json.input" y="0" scale9Grid="34,17,17,8" anchorOffsetX="0" width="343" anchorOffsetY="0" height="60" x="0"/>
+			<e:EditableText id="phoneText" text="" y="16.94" textColor="0x996A38" anchorOffsetX="0" width="315" promptColor="0x996A38" prompt="请输入手机号" x="14.02" textAlign="left" size="24"/>
+			</e:Group>
+			<e:Group y="266" x="150">
+			<e:Label text="地址：" y="11.34" textColor="0x8C5900" x="-111" bold="true" size="36"/>
+			<e:Image source="ui_json.input" y="0" scale9Grid="34,17,17,8" anchorOffsetX="0" width="343" anchorOffsetY="0" height="198" x="0"/>
+			<e:EditableText id="addrText" text="" y="16.94" textColor="0x996A38" anchorOffsetX="0" width="315" promptColor="0x996A38" prompt="请输入详细地址" x="14.02" textAlign="left" size="24" anchorOffsetY="0" height="168" multiline="true" maxChars="40" lineSpacing="5"/>
+			</e:Group>
+			<ns1:Button id="subBtn" label="" y="654" anchorOffsetX="93" anchorOffsetY="34.5" horizontalCenter="0">
+				<ns1:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="ui_json.btn_sub"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</ns1:skinName>
+			</ns1:Button>
+		</e:Group>
+	</e:Group>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+</e:Skin>

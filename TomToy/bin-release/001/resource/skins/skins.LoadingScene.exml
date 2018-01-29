@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.LoadingScene" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="loading_bg_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image x="132" y="388.36" source="loading_show_png"/>
+	<e:Image source="loading_bar_bg_png" y="898.87" scale9Grid="14,2,2,17" width="422" horizontalCenter="0"/>
+	<e:Image id="bar" source="loading_bar_png" y="902.1" scale9Grid="9,1,2,12" anchorOffsetX="0" width="412" horizontalCenter="0"/>
+	<e:Label id="progress" text="" bold="true" verticalCenter="342" textColor="0xffffff" size="16" horizontalCenter="0.5"/>
+</e:Skin>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgDailyGift" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="256" touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="802" width="618" horizontalCenter="0"/>
+	<e:Image y="330" scale9Grid="20,20,20,20" anchorOffsetY="0" height="702" anchorOffsetX="0" width="564" horizontalCenter="0" source="ui_json.dlg_border2"/>
+	<e:Image y="74.2" horizontalCenter="0.5" source="title_gift_png"/>
+	<e:Image source="ui_json.gift_hint" y="513" x="65"/>
+	<e:Image source="ui_json.line" y="715" horizontalCenter="0"/>
+	<ns1:Button id="subBtn" label="" y="913.98" x="320" anchorOffsetX="93" anchorOffsetY="34.5">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_sub"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:w="http://ns.egret.com/wing"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Group x="135" y="372" anchorOffsetY="0">
+		<e:Label text="进入" x="12" y="0" textColor="0x996a38"/>
+		<e:Label text="“汤姆娃娃机”" x="87" y="0" textColor="0x996A38" bold="true"/>
+		<e:Label text="公众号" x="286" y="0" textColor="0x996A38"/>
+		<e:Label text="点击" x="72" y="41" textColor="0x996A38"/>
+		<e:Label text="“每日礼包”" x="149" y="41" bold="true" width="153" textColor="0xfe57a4"/>
+		<e:Label text="即可免费领取惊喜大礼包哦！" x="0" y="81" textColor="0x996A38"/>
+	</e:Group>
+	<e:Image source="ui_json.input" y="763" scale9Grid="34,17,17,8" anchorOffsetX="0" width="500" anchorOffsetY="0" height="87" horizontalCenter="0"/>
+	<e:EditableText id="code" text="" y="792" textColor="0x996a38" anchorOffsetX="0" width="477" promptColor="0x996a38" prompt="请输入从公众号获取的礼包口令" x="82" textAlign="center"/>
+</e:Skin>

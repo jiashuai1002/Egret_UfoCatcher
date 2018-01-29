@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.UserInfo" xmlns:e="http://ns.egret.com/eui">
+	<e:Label id="nickName" text="-" x="18" y="10" size="24"/>
+	<e:Image source="game_json.coin_bg" x="10.66" y="50.03"/>
+	<e:Image source="game_json.cion" x="10" y="37.99"/>
+	<e:Label id="coin" text="-" x="64.38" y="56.68" size="24"/>
+</e:Skin>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgShow" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="256" touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="802" width="618" horizontalCenter="0"/>
+	<e:Image y="330" scale9Grid="20,20,20,20" anchorOffsetY="0" height="702" anchorOffsetX="0" width="564" horizontalCenter="0" source="ui_json.dlg_border2"/>
+	<e:Image y="73.2" horizontalCenter="1.5" source="title_show_png"/>
+	<e:Image id="showImage" y="355" horizontalCenter="3" width="328" source=""/>
+	<ns1:Button id="rightBtn" label="" x="544" y="591.5" anchorOffsetX="24" anchorOffsetY="40">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.arrow"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="leftBtn" label="" x="103" y="592" scaleX="1" anchorOffsetX="24" anchorOffsetY="40" rotation="180">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.arrow"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Group x="59" y="832">
+		<e:Rect width="523" height="181" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" ellipseWidth="50" ellipseHeight="50" fillColor="0xfff5d1"/>
+		<e:Label id="nickname" text="-" x="172.34" y="23.33" size="30" textColor="0xfe57a4"/>
+		<e:Label id="desc" text="-" x="172" y="64.5" size="24" textColor="0x996a38" anchorOffsetX="0" width="347" lineSpacing="7"/>
+		<e:Image id="head" x="88.5" y="91.5" source="" anchorOffsetX="67.5" anchorOffsetY="67.5" width="135" height="135"/>
+	</e:Group>
+</e:Skin>

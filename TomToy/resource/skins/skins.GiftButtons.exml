@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.GiftButtons" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="game_json.gift_bg" scale9Grid="15,33,93,9" anchorOffsetY="0" x="0" top="0" bottom="0"/>
+	<e:Group top="60" bottom="24" x="58">
+		<ns1:Button id="dailyTaskBtn" label="" x="1.5" y="0" anchorOffsetX="42" anchorOffsetY="43.5">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="game_json.daily_task"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:Button>
+		<ns1:Button id="dailyGiftBtn" label="" x="0.5" y="113" anchorOffsetX="43" anchorOffsetY="48">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="game_json.daily_gift"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:Button>
+		<e:Group x="-43.5" y="193" height="82">
+			<ns1:Button id="inviteBtn" label="" x="43.5" y="41" anchorOffsetX="41" anchorOffsetY="45" scaleX="1" scaleY="1">
+				<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="game_json.invite"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</ns1:skinName>
+			</ns1:Button>
+		</e:Group>
+		<e:Group x="-43.5" y="309.5" height="82">
+			<ns1:Button id="bindBtn" label="" x="43.5" y="41" anchorOffsetX="43.5" anchorOffsetY="41">
+				<ns1:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="game_json.bind"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</ns1:skinName>
+			</ns1:Button>
+		</e:Group>
+	</e:Group>
+</e:Skin>

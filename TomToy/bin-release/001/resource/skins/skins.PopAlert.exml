@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.PopAlert" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="640" height="1136">
+	<e:Group y="399.85" scaleX="0.8" scaleY="0.8" horizontalCenter="0">
+		<e:Image y="0" touchEnabled="false" anchorOffsetY="0" source="dlg_bg3_png" x="0"/>
+		<e:Image source="ui_json.dlg_border2" y="69.95" scale9Grid="24,25,7,6" anchorOffsetX="0" width="566" anchorOffsetY="0" height="320" x="25" scaleY="0.91"/>
+		<e:Label id="content" text="-" textColor="0x8C5900" size="30" bold="true" anchorOffsetX="0" width="400" textAlign="center" anchorOffsetY="0" height="186" verticalAlign="middle" x="108" y="119.33"/>
+	</e:Group>
+	<ns1:Button id="btn" label="确定" y="749.24" anchorOffsetX="67.5" anchorOffsetY="34.5" x="320.5">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:w="http://ns.egret.com/wing" size="28" strokeColor="0x3ea603" stroke="3"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="closeBtn" label="" x="534.36" y="436.47" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+</e:Skin>

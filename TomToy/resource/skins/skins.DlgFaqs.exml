@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgFaqs" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Image y="256" touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="802" width="618" horizontalCenter="0"/>
+	<e:Image y="330" scale9Grid="20,20,20,20" anchorOffsetY="0" height="702" anchorOffsetX="0" width="564" horizontalCenter="0" source="ui_json.dlg_border2"/>
+	<e:Image y="74.2" horizontalCenter="0.5" source="title_faqs_png"/>
+	<e:Image source="ui_json.gift_hint" y="513" x="65" visible="false"/>
+	<e:Image source="ui_json.line" y="715" horizontalCenter="0" visible="false"/>
+	<ns1:Button id="subBtn" label="" y="913.98" x="320" anchorOffsetX="93" anchorOffsetY="34.5" visible="false">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_sub"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:w="http://ns.egret.com/wing"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Group x="135" y="372" anchorOffsetY="0" visible="false">
+		<e:Label text="进入" x="12" y="0" textColor="0x996A38"/>
+		<e:Label text="“汤姆娃娃机”" x="87" y="0" textColor="0x996A38" bold="true"/>
+		<e:Label text="公众号" x="286" y="0" textColor="0x996A38"/>
+		<e:Label text="点击" x="72" y="41" textColor="0x996A38"/>
+		<e:Label text="“每日礼包”" x="149" y="41" bold="true" width="153" textColor="0xFE57A4"/>
+		<e:Label text="即可免费领取惊喜大礼包哦！" x="0" y="81" textColor="0x996A38"/>
+	</e:Group>
+	<e:Image source="ui_json.input" y="763" scale9Grid="34,17,17,8" anchorOffsetX="0" width="500" anchorOffsetY="0" height="87" horizontalCenter="0" visible="false"/>
+	<e:EditableText id="code" text="" y="792" textColor="0x996A38" anchorOffsetX="0" width="477" promptColor="0x996A38" prompt="请输入从公众号获取的礼包口令" x="82" textAlign="center" visible="false"/>
+	<e:Scroller width="512.12" height="646.98" x="63.21" y="361.66" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Group>
+			<e:Label text="1.问：汤姆娃娃机是什么？\n 答：是一款模拟抓取真实娃娃的在线娃娃机，抓到娃娃后可以提取真实的娃娃。\n  2.问：抓一次娃娃需要多少金币？\n 答：每一台娃娃机价格有所差别，机器封面会显示当前抓取一次娃娃所需金币数额，成功开始后会扣除相应金币量。\n  3.问：怎么知道我还有多少金币？\n 答：进入娃娃机房间后，屏幕下方会有您的金币余额显示。\n  4.问：如何获得金币？\n	 答：（1）除了默认赠送的金币外，还可点击页面下方的充值获得金币。\n  （2）每日点击新手福利可以领取免费金币。 \n （3）还可以通过分享获取免费金币。\n  5.问：如何判断是否抓到了娃娃？\n 答：娃娃成功掉入洞口即为成功抓到娃娃一次。\n  6.问：会不会一直夹不中？\n 答：不会。因为我们不是线下实体店，所以没有场地费和实体娃娃机的高价成本，所以在这里会更容易抓取到娃娃。我们每台娃娃都有保底幸运值，当幸运值满了之后是100%能抓起娃娃的。\n  7.问：哪里查看我抓到的娃娃？\n	 答：点击页面下方的背包查看你抓到的娃娃。\n  8.问：抓到娃娃怎么拿到娃娃？\n 答：抓到娃娃可以在弹窗中立即处理，也可以在背包弹出界面点击“提取娃娃”，选择数量填写地址后即可，工作人员会在1~5天之内寄出。（两只以上包邮，一只将收取邮费或金币）超过五天没有发出，可参见第9条，联系客服有机会获赠神秘娃娃。\n  9.问：发的什么快递？\n 答：xx快递，以实际寄出为准，默认2只包邮。\n  9.问：游戏中出现故障怎么办？\n 答：如游戏出现问题，你可以关注公众号【汤姆娃娃机】进行反馈，也可加入qq群：585743240，联系群主，工作人员会根据实际情况及时处理。\n" x="0" y="0" anchorOffsetX="0" width="510" anchorOffsetY="0" size="28" textColor="0x996a38" lineSpacing="10"/>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

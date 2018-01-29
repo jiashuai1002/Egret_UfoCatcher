@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgCharge" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="256" touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="802" width="618" horizontalCenter="0"/>
+	<e:Image y="321" scale9Grid="20,20,20,20" anchorOffsetY="0" height="703" anchorOffsetX="0" width="564" source="ui_json.dlg_border1" horizontalCenter="0"/>
+	<e:Image y="42" horizontalCenter="22.5" touchEnabled="false" source="title_charge_png"/>
+	<e:Scroller width="530" height="700" y="322.5" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" scaleY="1">
+		<e:Group>
+		<e:List id="list" width="530" y="15" horizontalCenter="0"/>
+		</e:Group>
+	</e:Scroller>
+	<ns1:Button id="closeBtn" label="" x="593" y="294" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Group id="payView" x="0" y="0">
+		<e:Rect width="720" height="1136" horizontalCenter="0" verticalCenter="0" fillAlpha="0.3" x="-40" y="0" scaleX="1" scaleY="1" touchEnabled="true"/>
+		<e:Image source="help_bg_png" y="359.5" scale9Grid="78,107,160,254" anchorOffsetY="0" height="366.42" anchorOffsetX="0" width="493" x="74" scaleX="1" scaleY="1"/>
+		<ns1:Button id="payClose" label="" x="537.17" y="388.42" anchorOffsetX="16" anchorOffsetY="16">
+			<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ui_json.btn_close1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</ns1:skinName>
+		</ns1:Button>
+		<e:Label text="请选择支付方式" y="407.42" size="36" textColor="0x996A38" anchorOffsetX="0" lineSpacing="7" bold="true" x="192" scaleX="1" scaleY="1"/>
+		<e:Label text="微信支付" y="663" size="30" textColor="0x996A38" anchorOffsetX="0" lineSpacing="7" bold="true" x="147.5" scaleX="1" scaleY="1" visible="false"/>
+		<e:Label text="支付宝支付" y="663" size="30" textColor="0x996A38" anchorOffsetX="0" lineSpacing="7" bold="true" scaleX="1" scaleY="1" x="245"/>
+		<e:Image id="aliBtn" source="ui_json.pay_ali" y="490.5" scaleX="1" scaleY="1" x="241"/>
+		<e:Image id="wxBtn" source="ui_json.pay_wx" x="128" y="490.5" scaleX="1" scaleY="1" visible="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgBind" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image y="366" touchEnabled="false" anchorOffsetY="0" horizontalCenter="0.5" source="dlg_bg3_png"/>
+	<e:Image y="440" scale9Grid="20,20,20,20" anchorOffsetY="0" height="407" anchorOffsetX="0" width="564" horizontalCenter="0" source="ui_json.dlg_border2"/>
+	<e:Image y="185.2" horizontalCenter="-0.5" source="title_bind_png"/>
+	<ns1:Button id="closeBtn" label="" x="593" y="404" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="bindBtn" label="" y="792.5" x="320" anchorOffsetX="93" anchorOffsetY="34.5">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_bind"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="codeBtn" label="" y="526" x="494.5" anchorOffsetX="84.5" anchorOffsetY="47">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="ui_json.btn_code"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Group y="483" x="70">
+		<e:Image source="ui_json.input" y="0" scale9Grid="34,17,17,8" anchorOffsetX="0" width="330" anchorOffsetY="0" height="87" x="0"/>
+		<e:EditableText id="phone" text="" y="29" textColor="0x996A38" anchorOffsetX="0" width="308" promptColor="0x996A38" prompt="请输入手机号" x="12" textAlign="left"/>
+	</e:Group>
+	<e:Group y="598" x="70">
+		<e:Image source="ui_json.input" y="0" scale9Grid="34,17,17,8" anchorOffsetX="0" width="500" anchorOffsetY="0" height="87" x="0"/>
+		<e:EditableText id="code" text="" y="29" textColor="0x996A38" anchorOffsetX="0" width="477" promptColor="0x996A38" prompt="请输入验证码" x="12" textAlign="left"/>
+	</e:Group>
+	<e:Image source="ui_json.bag_coin1" x="73" y="691"/>
+	<e:Label text="绑定手机免费领取10金币" x="130" y="709" size="24" textColor="0x996a38"/>
+	<e:Label id="time" text="60秒后获取" x="415" y="512" size="30" textColor="0x996A38" visible="false"/>
+</e:Skin>
