@@ -9,7 +9,7 @@
 			</e:Skin>
 		</ns1:skinName>
 	</ns1:Button>
-	<ns1:Button id="soundBtn" label="" y="373.5" horizontalCenter="0.5" anchorOffsetX="103.5" anchorOffsetY="34.5">
+	<ns1:Button id="soundBtn" label="" y="373.5" anchorOffsetX="103.5" anchorOffsetY="34.5" horizontalCenter="0">
 		<ns1:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="ui_json.music_off"/>
@@ -25,7 +25,7 @@
 			</e:Skin>
 		</ns1:skinName>
 	</ns1:Button>
-	<ns1:Button id="helpBtn" label="" y="531.4966666666671" horizontalCenter="0.5" anchorOffsetX="100.5" anchorOffsetY="31.5">
+	<ns1:Button id="helpBtn" label="" horizontalCenter="0.5" anchorOffsetX="100.5" anchorOffsetY="31.5" y="531.5">
 		<ns1:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="ui_json.btn_help"/>

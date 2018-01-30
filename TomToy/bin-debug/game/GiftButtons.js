@@ -25,10 +25,21 @@ var GiftButtons = (function (_super) {
             _this.checkPhone(value);
         });
         this.checkPhone(PlayerDataManager.get(PlayerDataKey.PHONE));
+        this.flag = false;
+        TimerManager.doTimer(400, 0, this.change, this);
     };
     GiftButtons.prototype.checkPhone = function (phone) {
         if (phone) {
             DisplayUtils.removeFromParent(this.bindBtn.parent);
+        }
+    };
+    GiftButtons.prototype.change = function () {
+        this.flag = !this.flag;
+        if (this.flag) {
+            egret.Tween.get(this.dailyGiftBtn).to({ scaleX: 0.75, scaleY: 0.75 }, 400, egret.Ease.quadOut);
+        }
+        else {
+            egret.Tween.get(this.dailyGiftBtn).to({ scaleX: 1, scaleY: 1 }, 400, egret.Ease.quadOut);
         }
     };
     return GiftButtons;

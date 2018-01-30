@@ -31,6 +31,12 @@ var DlgSetting = (function (_super) {
         });
         this.quitBtn.setOnTap(this.quit.bind(this));
         _super.prototype.init.call(this);
+        //微信环境下 setting-dialog 特殊处理。
+        if (PlayerShowData.isWechat()) {
+            this.quitBtn.visible = false;
+            this.bulletBtn.y = 474;
+            this.helpBtn.y = 570;
+        }
     };
     DlgSetting.prototype.checkSound = function () {
         var image = this.soundBtn.getChildAt(0);

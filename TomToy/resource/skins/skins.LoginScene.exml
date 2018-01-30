@@ -9,7 +9,7 @@
 			</e:Skin>
 		</ns1:skinName>
 	</ns1:Button>
-	<ns1:Button id="wxBtn" label="" y="889" horizontalCenter="0.5" anchorOffsetX="138.5" anchorOffsetY="50">
+	<ns1:Button id="wxBtn" label="" y="889" horizontalCenter="0.5" anchorOffsetX="138.5" anchorOffsetY="50" visible="false">
 		<ns1:skinName>
 			<e:Skin states="up,down,disabled">
 			<e:Image width="100%" height="100%" source="btn_wx_png"/>

@@ -17,6 +17,7 @@ var Main = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Main.prototype.createChildren = function () {
+        // PlayerShowData.
         _super.prototype.createChildren.call(this);
         DisplayUtils.removeFromParent(this);
         EgretExpandManager.init();
@@ -64,7 +65,13 @@ var Main = (function (_super) {
                 this.loadData();
             }
             else {
-                ViewManager.I.open(ViewName.LOGIN);
+                //判断用户是否在微信：1在  直接跳转微信授权操作； 2不在 其他登录逻辑；
+                if (PlayerShowData.isWechat()) {
+                    WxPlatform.login();
+                }
+                else {
+                    ViewManager.I.open(ViewName.LOGIN);
+                }
             }
         }
         else if (event.groupName == "preload") {
@@ -101,6 +108,7 @@ var Main = (function (_super) {
             }
         };
         HttpManager.post(HttpCmd.ROOM_LIST, null, function (ret) {
+            console.log("all Ufos", ret);
             DataManager.initRoom(ret.ufos);
             var randomNum = parseInt(ret.ufos.length * Math.random());
             _this.iRoomNum = ret.ufos[randomNum].uc_id || 1;
@@ -112,19 +120,22 @@ var Main = (function (_super) {
             check();
         }, null, true);
         HttpManager.post(HttpCmd.USER, { user_id: user_id }, function (ret) {
-            console.log(ret);
-            if (ret.result.return_code != 0) {
-                console.log("呼出登录面板");
-                ViewManager.I.open(ViewName.LOGIN);
-            }
-            else {
-                var user = ret.result.user;
-                PlayerDataManager.set(PlayerDataKey.ID, user.user_id);
-                PlayerDataManager.set(PlayerDataKey.NAME, user.nickname);
-                PlayerDataManager.set(PlayerDataKey.HEAD, user.avtar);
-                PlayerDataManager.set(PlayerDataKey.PHONE, user.phone);
-                check();
-            }
+            // console.log(ret)
+            // if (ret.result.return_code != 0) {
+            //     //判断用户是否在微信：1在  直接跳转微信授权操作； 2不在 其他登录逻辑；
+            //     if (PlayerShowData.isWechat()) {
+            //         WxPlatform.login();
+            //     } else {
+            //         ViewManager.I.open(ViewName.LOGIN);
+            //     }
+            // } else {
+            var user = ret.result.user;
+            PlayerDataManager.set(PlayerDataKey.ID, user.user_id);
+            PlayerDataManager.set(PlayerDataKey.NAME, user.nickname);
+            PlayerDataManager.set(PlayerDataKey.HEAD, user.avtar);
+            PlayerDataManager.set(PlayerDataKey.PHONE, user.phone);
+            check();
+            // }
         }, null, true);
         HttpManager.post(HttpCmd.USER_CURRENCY, { user_id: user_id }, function (ret) {
             PlayerDataManager.set(PlayerDataKey.COIN, parseInt(ret.result.uc_balance));
@@ -149,6 +160,7 @@ var Main = (function (_super) {
         ViewManager.I.close(ViewName.LOADING);
         ViewManager.I.open(ViewName.GAME, this.iRoomNum);
         ViewManager.I.open(ViewName.DLG_NOTICE);
+        window["openNewHelp"]();
     };
     return Main;
 }(eui.UILayer));

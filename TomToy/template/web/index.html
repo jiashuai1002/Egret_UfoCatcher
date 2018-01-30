@@ -10,7 +10,7 @@
     <meta name="screen-orientation" content="portrait" />
     <meta name="x5-fullscreen" content="true" />
     <meta name="360-fullscreen" content="true" />
-    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" ></script>
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
     <script src="http://sdk.talkingdata.com/app/h5/v1?appid=FB9E7118BB094C519E337475E71D1BC6&vn=egret汤姆娃娃机&vc=1.0.1"></script>
     <style>
         html, body {
@@ -52,34 +52,56 @@
             top: 10px;
             right: 9%;
         }
+        .new-help{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .7);
+            overflow: hidden;
+            display: none;
+        }
+        .helpPages{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding-top: 113%;
+        }
+        .new-help>div>img{
+            display: block;
+            margin: 0 auto;
+            width: 52%;
+        }
     </style>
 </head>
 
 <body>
     <script src="libs/zepto.min.js"></script>
-    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
-         data-entry-class="Main"
-         data-orientation="auto"
-         data-scale-mode="fixedHeight"
-         data-frame-rate="60"
-         data-content-width="640"
-         data-content-height="1136"
-         data-show-paint-rect="false"
-         data-multi-fingered="2"
-         data-show-fps="false" data-show-log="false"
-         data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    <div style="margin: auto;width: 100%;height: 100%;" class="egret-player" data-entry-class="Main" data-orientation="auto" data-scale-mode="fixedHeight" data-frame-rate="60"
+data-content-width="640" data-content-height="1136" data-show-paint-rect="false" data-multi-fingered="2" data-show-fps="false"
+data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+</div>
+<div id="qr" style="position: absolute;width: 100%; height: 100%;top:0;display: none;background-color: rgba(0,0,0,0.6);">
+<div class="share-desc">
+    长按图片发送到好友群/保存发朋友圈<br/> 好友扫码进入游戏抓娃娃
+    <br/> 您将获得金币奖励
+</div>
+<div class="close-btn"></div>
+<img id="qr_img" class="share-img">
+</div>
+<div id="show" style="position: absolute;width: 100%; height: 100%;top:0;display: none;background-color: rgba(0,0,0,0.6);">
+<div class="close-btn-1"></div>
+<img id="show_img" class="share-img" style="width: 100%;height: 100%;">
+</div>
+<!--新手引导部分-->
+<div class="new-help">
+    <div class="helpPages">
+        <img src="resource/image/newHelp01.png" alt="">
     </div>
-    <div id="qr" style="position: absolute;width: 100%; height: 100%;top:0;display: none;background-color: rgba(0,0,0,0.6);">
-        <div class="share-desc">
-            长按图片发送到好友群/保存发朋友圈<br/> 好友扫码进入游戏抓娃娃
-            <br/> 您将获得金币奖励
-        </div>
-        <div class="close-btn"></div>
-        <img id="qr_img" class="share-img">
+    <div class="helpPages">
+        <img src="resource/image/newHelp02.png" style="width: 66%;margin-left: 33%;">
     </div>
-    <div id="show" style="position: absolute;width: 100%; height: 100%;top:0;display: none;background-color: rgba(0,0,0,0.6);">
-        <div class="close-btn-1"></div>
-        <img id="show_img" class="share-img" style="width: 100%;height: 100%;">
+    <div class="helpPages">
+        <img src="resource/image/newHelp03.png" style="width: 66%;margin-left: 27%;margin-top: 11%;"></div>
     </div>
 <script>
     var loadScript = function (list, callback) {
@@ -124,28 +146,30 @@
              * "calculateCanvasScaleFactor": //a function return canvas scale factor
              * }
              **/
-            egret.runEgret({ renderMode: "canvas", audioType: 0, calculateCanvasScaleFactor:function(context) {
-                var backingStore = context.backingStorePixelRatio ||
-                    context.webkitBackingStorePixelRatio ||
-                    context.mozBackingStorePixelRatio ||
-                    context.msBackingStorePixelRatio ||
-                    context.oBackingStorePixelRatio ||
-                    context.backingStorePixelRatio || 1;
-                return (window.devicePixelRatio || 1) / backingStore;
-            }});
+            egret.runEgret({
+                renderMode: "canvas", audioType: 0, calculateCanvasScaleFactor: function (context) {
+                    var backingStore = context.backingStorePixelRatio ||
+                        context.webkitBackingStorePixelRatio ||
+                        context.mozBackingStorePixelRatio ||
+                        context.msBackingStorePixelRatio ||
+                        context.oBackingStorePixelRatio ||
+                        context.backingStorePixelRatio || 1;
+                    return (window.devicePixelRatio || 1) / backingStore;
+                }
+            });
         });
     });
     xhr.send(null);
 
     function jump(url) {
-		window.location = url;
-	}
+        window.location = url;
+    }
 
     function getParam(name) {
-		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-		var r = window.location.search.substr(1).match(reg);
-		if (r != null) return unescape(r[2]); return null;
-	}
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
 
     $(".close-btn").on("click", hideQrcode);
     $(".close-btn-1").on("click", hideAward);
@@ -153,7 +177,7 @@
         $("#qr_img").attr("src", data);
         $("#qr").show();
     }
-    function showAward(data){
+    function showAward(data) {
         $("#show_img").attr("src", data);
         $("#show").show();
         $("#show_img").show();
@@ -166,6 +190,29 @@
         $("#show").hide();
         $("#show_img").hide();
     }
+    function openNewHelp(data) {
+        console.log(data)
+        $(".new-help").show();
+    }
+    $(".helpPages").bind('click',function(){
+        
+        var currindex = $(this).index();
+        $(this).hide();
+        if(currindex === 2){
+            $(".new-help").hide();
+            localStorage.setItem("isHelpTips", "ok")
+        }
+    })
+    /**
+     * [isHelpShow 祛除新手引导]
+     * @return {Boolean} [description]
+     */
+    ;(function isHelpShow() {
+        var isHelp = localStorage.getItem("isHelpTips") || '';
+        if (isHelp === "ok") {
+            $(".new-help").remove();
+        }
+    }());
 </script>
 </body>
 

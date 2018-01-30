@@ -35,8 +35,11 @@ class ChargeItem extends eui.ItemRenderer {
 	}
 
 	private charge() {
-		// ViewManager.I.doFunc(ViewName.DLG_CHARGE, "charge", this.data.ps_id);
-		WxPlatform.pay(this.data.ps_id);
+		if (PlayerShowData.isWechat()) {
+			WxPlatform.pay(this.data.ps_id);
+		} else {
+			ViewManager.I.doFunc(ViewName.DLG_CHARGE, "charge", this.data.ps_id);		
+		}
 		TDAPP.onEvent('充值按钮', "点击");
 	}
 }

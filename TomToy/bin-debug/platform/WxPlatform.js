@@ -5,19 +5,44 @@ var WxPlatform = (function () {
     function WxPlatform() {
     }
     WxPlatform.login = function () {
+        TDAPP.onEvent('微信授权登录', "访问");
         var url = Config.server + HttpCmd.LOGIN_WX;
         window["jump"](url);
     };
     WxPlatform.pay = function (payId) {
-        var url = Config.server + HttpCmd.PAY + "?user_id="
-            + PlayerDataManager.get(PlayerDataKey.ID) + "&pay_channel=" + 6 + "&pay_id=" + payId;
-        window["jump"](url);
+        // var url = Config.server + HttpCmd.PAY + "?user_id="
+        // 	+ PlayerDataManager.get(PlayerDataKey.ID) + "&pay_channel=" + 6 + "&pay_id=" + payId;
+        // window["jump"](url);
         HttpManager.post(HttpCmd.PAY, {
             user_id: PlayerDataManager.get(PlayerDataKey.ID),
             pay_channel: 6,
             pay_id: payId
         }, function (res) {
             console.log(res);
+            var pay = res.result.payment;
+            wx.config({
+                debug: false,
+                appId: pay.appId,
+                timestamp: pay.timeStamp,
+                nonceStr: pay.nonceStr,
+                signature: pay.paySign,
+                jsApiList: ['chooseWXPay']
+            });
+            wx.chooseWXPay({
+                appId: pay.appId,
+                timestamp: pay.timeStamp,
+                nonceStr: pay.nonceStr,
+                package: pay.package,
+                signType: pay.signType,
+                paySign: pay.paySign,
+                success: function (res) {
+                    console.log(res);
+                    TDAPP.onEvent('消费成功-id' + payId, "访问");
+                    HttpManager.post(HttpCmd.USER_CURRENCY, { user_id: PlayerDataManager.get(PlayerDataKey.ID) }, function (ret) {
+                        PlayerDataManager.set(PlayerDataKey.COIN, parseInt(ret.result.uc_balance));
+                    });
+                }
+            });
         }, null, true);
     };
     WxPlatform.share = function (title, content) {

@@ -64,7 +64,7 @@
 		"bin-debug/game/GameConfig.js",
 		"bin-debug/game/GameNotice.js",
 		"bin-debug/ThemeAdapter.js",
-		"bin-debug/view/ViewName.js",
+		"bin-debug/Main.js",
 		"bin-debug/game/GameTimer.js",
 		"bin-debug/game/GameTips.js",
 		"bin-debug/game/GiftButtons.js",
@@ -119,6 +119,6 @@
 		"bin-debug/common/Head.js",
 		"bin-debug/common/Rect.js",
 		"bin-debug/view/ViewManager.js",
-		"bin-debug/Main.js"
+		"bin-debug/view/ViewName.js"
 	]
 }

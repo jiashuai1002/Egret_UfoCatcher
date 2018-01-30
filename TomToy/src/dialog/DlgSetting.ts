@@ -26,7 +26,14 @@ class DlgSetting extends Dialog {
 		})
 
 		this.quitBtn.setOnTap(this.quit.bind(this));
+
 		super.init();
+		//微信环境下 setting-dialog 特殊处理。
+		if(PlayerShowData.isWechat()){
+			this.quitBtn.visible = false;
+			this.bulletBtn.y = 474;
+			this.helpBtn.y = 570;
+		}
 	}
 
 	private checkSound() {

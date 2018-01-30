@@ -4,6 +4,20 @@ var __reflect = (this && this.__reflect) || function (p, c, t) {
 var PlayerShowData = (function () {
     function PlayerShowData() {
     }
+    /**
+     * @name  判断是否在微信环境
+     * @returns  boolean
+     */
+    PlayerShowData.isWechat = function () {
+        var ua = navigator.userAgent.toLowerCase();
+        var isWeixin = ua.indexOf('micromessenger') != -1;
+        if (isWeixin) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    };
     return PlayerShowData;
 }());
 __reflect(PlayerShowData.prototype, "PlayerShowData");
