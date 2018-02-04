@@ -7,4 +7,3 @@ var InviteTaskData = (function () {
     return InviteTaskData;
 }());
 __reflect(InviteTaskData.prototype, "InviteTaskData");
-//# sourceMappingURL=InviteTaskData.js.map

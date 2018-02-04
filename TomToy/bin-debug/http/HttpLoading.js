@@ -63,4 +63,3 @@ var HttpLoading = (function (_super) {
     return HttpLoading;
 }(PopWin));
 __reflect(HttpLoading.prototype, "HttpLoading");
-//# sourceMappingURL=HttpLoading.js.map

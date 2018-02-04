@@ -92,4 +92,3 @@ var HttpManager = (function () {
     return HttpManager;
 }());
 __reflect(HttpManager.prototype, "HttpManager");
-//# sourceMappingURL=HttpManager.js.map

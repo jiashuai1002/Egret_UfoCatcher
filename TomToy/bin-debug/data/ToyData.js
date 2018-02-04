@@ -7,4 +7,3 @@ var ToyData = (function () {
     return ToyData;
 }());
 __reflect(ToyData.prototype, "ToyData");
-//# sourceMappingURL=ToyData.js.map

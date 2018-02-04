@@ -34,4 +34,3 @@ var GameNotice = (function (_super) {
     return GameNotice;
 }(UIComponent));
 __reflect(GameNotice.prototype, "GameNotice");
-//# sourceMappingURL=GameNotice.js.map

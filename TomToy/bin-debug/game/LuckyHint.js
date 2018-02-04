@@ -31,4 +31,3 @@ var LuckyHint = (function (_super) {
     return LuckyHint;
 }(UIComponent));
 __reflect(LuckyHint.prototype, "LuckyHint");
-//# sourceMappingURL=LuckyHint.js.map

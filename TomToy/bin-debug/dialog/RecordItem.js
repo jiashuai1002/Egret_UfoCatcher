@@ -26,4 +26,3 @@ var RecordItem = (function (_super) {
     return RecordItem;
 }(eui.ItemRenderer));
 __reflect(RecordItem.prototype, "RecordItem");
-//# sourceMappingURL=RecordItem.js.map

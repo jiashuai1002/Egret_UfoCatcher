@@ -32,4 +32,3 @@ var DlgDailyGift = (function (_super) {
     return DlgDailyGift;
 }(Dialog));
 __reflect(DlgDailyGift.prototype, "DlgDailyGift");
-//# sourceMappingURL=DlgDailyGift.js.map

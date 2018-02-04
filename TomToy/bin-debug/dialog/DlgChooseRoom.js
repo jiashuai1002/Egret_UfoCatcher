@@ -63,4 +63,3 @@ var DlgChooseRoom = (function (_super) {
     return DlgChooseRoom;
 }(Dialog));
 __reflect(DlgChooseRoom.prototype, "DlgChooseRoom");
-//# sourceMappingURL=DlgChooseRoom.js.map

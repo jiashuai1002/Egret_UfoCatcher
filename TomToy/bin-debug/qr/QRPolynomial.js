@@ -45,4 +45,3 @@ var qr;
     qr.QRPolynomial = QRPolynomial;
     __reflect(QRPolynomial.prototype, "qr.QRPolynomial");
 })(qr || (qr = {}));
-//# sourceMappingURL=QRPolynomial.js.map

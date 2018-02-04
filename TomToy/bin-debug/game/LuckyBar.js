@@ -60,4 +60,3 @@ var LuckyBar = (function (_super) {
     return LuckyBar;
 }(UIComponent));
 __reflect(LuckyBar.prototype, "LuckyBar");
-//# sourceMappingURL=LuckyBar.js.map

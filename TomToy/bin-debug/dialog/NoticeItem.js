@@ -29,4 +29,3 @@ var NoticeItem = (function (_super) {
     return NoticeItem;
 }(eui.ItemRenderer));
 __reflect(NoticeItem.prototype, "NoticeItem");
-//# sourceMappingURL=NoticeItem.js.map

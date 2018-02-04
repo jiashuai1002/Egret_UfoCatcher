@@ -42,4 +42,3 @@ var RoomItem = (function (_super) {
     return RoomItem;
 }(UIComponent));
 __reflect(RoomItem.prototype, "RoomItem");
-//# sourceMappingURL=RoomItem.js.map

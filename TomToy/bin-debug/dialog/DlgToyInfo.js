@@ -63,4 +63,3 @@ var DlgToyInfo = (function (_super) {
     return DlgToyInfo;
 }(Dialog));
 __reflect(DlgToyInfo.prototype, "DlgToyInfo");
-//# sourceMappingURL=DlgToyInfo.js.map

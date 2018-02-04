@@ -20,4 +20,3 @@ var BackupScene = (function (_super) {
     return BackupScene;
 }(GameScene));
 __reflect(BackupScene.prototype, "BackupScene");
-//# sourceMappingURL=BackupScene.js.map

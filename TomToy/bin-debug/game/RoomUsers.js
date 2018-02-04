@@ -44,4 +44,3 @@ var RoomUsers = (function (_super) {
     return RoomUsers;
 }(UIComponent));
 __reflect(RoomUsers.prototype, "RoomUsers");
-//# sourceMappingURL=RoomUsers.js.map

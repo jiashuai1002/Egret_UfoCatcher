@@ -21,4 +21,3 @@ var PlayerShowData = (function () {
     return PlayerShowData;
 }());
 __reflect(PlayerShowData.prototype, "PlayerShowData");
-//# sourceMappingURL=PlayerShowData.js.map

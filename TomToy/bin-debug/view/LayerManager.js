@@ -31,4 +31,3 @@ var Layer;
     Layer[Layer["DIALOG"] = 1] = "DIALOG";
     Layer[Layer["POPWIN"] = 2] = "POPWIN";
 })(Layer || (Layer = {}));
-//# sourceMappingURL=LayerManager.js.map

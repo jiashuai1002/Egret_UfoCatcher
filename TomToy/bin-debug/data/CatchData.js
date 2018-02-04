@@ -7,4 +7,3 @@ var CatchData = (function () {
     return CatchData;
 }());
 __reflect(CatchData.prototype, "CatchData");
-//# sourceMappingURL=CatchData.js.map

@@ -48,4 +48,3 @@ var PlayerDataKey;
     PlayerDataKey[PlayerDataKey["COIN"] = 3] = "COIN";
     PlayerDataKey[PlayerDataKey["PHONE"] = 4] = "PHONE";
 })(PlayerDataKey || (PlayerDataKey = {}));
-//# sourceMappingURL=PlayerDataManager.js.map

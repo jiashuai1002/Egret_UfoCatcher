@@ -108,4 +108,3 @@ var WxPlatform = (function () {
     return WxPlatform;
 }());
 __reflect(WxPlatform.prototype, "WxPlatform");
-//# sourceMappingURL=WxPlatform.js.map

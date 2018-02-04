@@ -155,4 +155,3 @@ var Hand = (function (_super) {
     return Hand;
 }(GameObject));
 __reflect(Hand.prototype, "Hand");
-//# sourceMappingURL=Hand.js.map

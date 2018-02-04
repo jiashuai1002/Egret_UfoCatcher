@@ -37,4 +37,3 @@ var Head = (function (_super) {
     return Head;
 }(eui.Image));
 __reflect(Head.prototype, "Head");
-//# sourceMappingURL=Head.js.map

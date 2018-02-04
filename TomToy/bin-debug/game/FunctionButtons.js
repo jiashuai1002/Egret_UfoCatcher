@@ -36,4 +36,3 @@ var FunctionButtons = (function (_super) {
     return FunctionButtons;
 }(UIComponent));
 __reflect(FunctionButtons.prototype, "FunctionButtons");
-//# sourceMappingURL=FunctionButtons.js.map

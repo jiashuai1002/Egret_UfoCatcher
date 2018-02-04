@@ -49,4 +49,3 @@ var LoadingScene = (function (_super) {
     return LoadingScene;
 }(Scene));
 __reflect(LoadingScene.prototype, "LoadingScene");
-//# sourceMappingURL=LoadingScene.js.map

@@ -37,4 +37,3 @@ var AwardShow = (function (_super) {
     return AwardShow;
 }(eui.Component));
 __reflect(AwardShow.prototype, "AwardShow");
-//# sourceMappingURL=AwardShow.js.map

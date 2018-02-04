@@ -40,4 +40,3 @@ var HttpCmd = (function () {
     return HttpCmd;
 }());
 __reflect(HttpCmd.prototype, "HttpCmd");
-//# sourceMappingURL=HttpCmd.js.map

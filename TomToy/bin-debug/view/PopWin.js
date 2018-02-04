@@ -18,4 +18,3 @@ var PopWin = (function (_super) {
     return PopWin;
 }(BaseView));
 __reflect(PopWin.prototype, "PopWin");
-//# sourceMappingURL=PopWin.js.map

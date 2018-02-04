@@ -7,4 +7,3 @@ var BulletData = (function () {
     return BulletData;
 }());
 __reflect(BulletData.prototype, "BulletData");
-//# sourceMappingURL=BulletData.js.map

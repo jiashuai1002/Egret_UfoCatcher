@@ -53,4 +53,3 @@ var ChargeItem = (function (_super) {
     return ChargeItem;
 }(eui.ItemRenderer));
 __reflect(ChargeItem.prototype, "ChargeItem");
-//# sourceMappingURL=ChargeItem.js.map

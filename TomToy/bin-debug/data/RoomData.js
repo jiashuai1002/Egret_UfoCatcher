@@ -7,4 +7,3 @@ var RoomData = (function () {
     return RoomData;
 }());
 __reflect(RoomData.prototype, "RoomData");
-//# sourceMappingURL=RoomData.js.map

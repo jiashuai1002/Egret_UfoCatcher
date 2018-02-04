@@ -30,4 +30,3 @@ var ViewName = (function () {
     return ViewName;
 }());
 __reflect(ViewName.prototype, "ViewName");
-//# sourceMappingURL=ViewName.js.map

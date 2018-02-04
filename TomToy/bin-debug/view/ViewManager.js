@@ -49,4 +49,3 @@ var ViewManager = (function () {
     return ViewManager;
 }());
 __reflect(ViewManager.prototype, "ViewManager");
-//# sourceMappingURL=ViewManager.js.map

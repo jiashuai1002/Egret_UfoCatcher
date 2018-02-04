@@ -45,4 +45,3 @@ var GiftButtons = (function (_super) {
     return GiftButtons;
 }(UIComponent));
 __reflect(GiftButtons.prototype, "GiftButtons");
-//# sourceMappingURL=GiftButtons.js.map

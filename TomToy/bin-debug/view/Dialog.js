@@ -46,4 +46,3 @@ var Dialog = (function (_super) {
     return Dialog;
 }(BaseView));
 __reflect(Dialog.prototype, "Dialog");
-//# sourceMappingURL=Dialog.js.map

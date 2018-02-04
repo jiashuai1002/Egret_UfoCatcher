@@ -5,4 +5,3 @@ var Direction;
     Direction[Direction["LEFT"] = 3] = "LEFT";
     Direction[Direction["RIGHT"] = 4] = "RIGHT";
 })(Direction || (Direction = {}));
-//# sourceMappingURL=Direction.js.map

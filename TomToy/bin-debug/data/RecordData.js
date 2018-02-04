@@ -7,4 +7,3 @@ var RecordData = (function () {
     return RecordData;
 }());
 __reflect(RecordData.prototype, "RecordData");
-//# sourceMappingURL=RecordData.js.map

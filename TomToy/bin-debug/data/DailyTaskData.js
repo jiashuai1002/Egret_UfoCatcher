@@ -7,4 +7,3 @@ var DailyTaskData = (function () {
     return DailyTaskData;
 }());
 __reflect(DailyTaskData.prototype, "DailyTaskData");
-//# sourceMappingURL=DailyTaskData.js.map

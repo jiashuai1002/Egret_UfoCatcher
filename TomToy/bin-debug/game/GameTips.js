@@ -27,4 +27,3 @@ var GameTips = (function (_super) {
     return GameTips;
 }(eui.Label));
 __reflect(GameTips.prototype, "GameTips");
-//# sourceMappingURL=GameTips.js.map

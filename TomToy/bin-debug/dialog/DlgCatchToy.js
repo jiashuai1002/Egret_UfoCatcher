@@ -50,4 +50,3 @@ var DlgCatchToy = (function (_super) {
     return DlgCatchToy;
 }(Dialog));
 __reflect(DlgCatchToy.prototype, "DlgCatchToy");
-//# sourceMappingURL=DlgCatchToy.js.map

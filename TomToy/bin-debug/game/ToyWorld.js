@@ -318,4 +318,3 @@ var ToyWorld = (function (_super) {
     return ToyWorld;
 }(eui.Component));
 __reflect(ToyWorld.prototype, "ToyWorld");
-//# sourceMappingURL=ToyWorld.js.map

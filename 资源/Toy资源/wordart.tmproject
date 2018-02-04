@@ -1,0 +1,23 @@
+{
+    "options": {
+        "useExtension": 0,
+        "layoutGap": 1,
+        "extend": 0,
+        "layoutMath": "3",
+        "sizeMode": "2n"
+    },
+    "files": [
+        "./180102图片/没中文案/fail_hint9.png",
+        "./180102图片/没中文案/fail_hint8.png",
+        "./180102图片/没中文案/fail_hint7.png",
+        "./180102图片/没中文案/fail_hint6.png",
+        "./180102图片/没中文案/fail_hint5.png",
+        "./180102图片/没中文案/fail_hint4.png",
+        "./180102图片/没中文案/fail_hint3.png",
+        "./180102图片/没中文案/fail_hint2.png",
+        "./180102图片/没中文案/fail_hint1.png",
+        "./180102图片/没中文案/fail_hint10.png"
+    ],
+    "version": 5,
+    "projectName": "wordart"
+}

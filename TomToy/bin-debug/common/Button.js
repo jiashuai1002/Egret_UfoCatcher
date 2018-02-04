@@ -54,4 +54,3 @@ var Button = (function (_super) {
     return Button;
 }(eui.Button));
 __reflect(Button.prototype, "Button");
-//# sourceMappingURL=Button.js.map

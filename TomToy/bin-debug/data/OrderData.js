@@ -7,4 +7,3 @@ var OrderData = (function () {
     return OrderData;
 }());
 __reflect(OrderData.prototype, "OrderData");
-//# sourceMappingURL=OrderData.js.map

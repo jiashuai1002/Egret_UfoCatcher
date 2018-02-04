@@ -59,4 +59,3 @@ var DlgSetting = (function (_super) {
     return DlgSetting;
 }(Dialog));
 __reflect(DlgSetting.prototype, "DlgSetting");
-//# sourceMappingURL=DlgSetting.js.map

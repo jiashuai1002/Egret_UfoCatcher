@@ -11,4 +11,3 @@ var QQPlatform = (function () {
     return QQPlatform;
 }());
 __reflect(QQPlatform.prototype, "QQPlatform");
-//# sourceMappingURL=QQPlatform.js.map

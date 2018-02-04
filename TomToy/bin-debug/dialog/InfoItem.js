@@ -28,4 +28,3 @@ var InfoItem = (function (_super) {
     return InfoItem;
 }(eui.ItemRenderer));
 __reflect(InfoItem.prototype, "InfoItem");
-//# sourceMappingURL=InfoItem.js.map

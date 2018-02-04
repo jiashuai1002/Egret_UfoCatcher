@@ -28,4 +28,3 @@ var Lamp = (function (_super) {
     return Lamp;
 }(UIComponent));
 __reflect(Lamp.prototype, "Lamp");
-//# sourceMappingURL=Lamp.js.map

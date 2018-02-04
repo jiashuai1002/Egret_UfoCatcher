@@ -110,4 +110,3 @@ var Toy = (function (_super) {
     return Toy;
 }(GameObject));
 __reflect(Toy.prototype, "Toy");
-//# sourceMappingURL=Toy.js.map

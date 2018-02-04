@@ -40,4 +40,3 @@ var GameTimer = (function (_super) {
     return GameTimer;
 }(UIComponent));
 __reflect(GameTimer.prototype, "GameTimer");
-//# sourceMappingURL=GameTimer.js.map

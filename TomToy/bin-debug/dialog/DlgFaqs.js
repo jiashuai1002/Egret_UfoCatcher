@@ -32,4 +32,3 @@ var DlgFaqs = (function (_super) {
     return DlgFaqs;
 }(Dialog));
 __reflect(DlgFaqs.prototype, "DlgFaqs");
-//# sourceMappingURL=DlgFaqs.js.map

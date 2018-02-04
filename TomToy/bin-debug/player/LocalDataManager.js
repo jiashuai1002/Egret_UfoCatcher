@@ -60,4 +60,3 @@ var LocalDataKey;
     LocalDataKey[LocalDataKey["ADDRESS"] = 4] = "ADDRESS";
     LocalDataKey[LocalDataKey["SHARE"] = 5] = "SHARE";
 })(LocalDataKey || (LocalDataKey = {}));
-//# sourceMappingURL=LocalDataManager.js.map

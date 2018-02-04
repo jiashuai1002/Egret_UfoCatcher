@@ -52,4 +52,3 @@ var qr;
     qr.QR8bitByte = QR8bitByte;
     __reflect(QR8bitByte.prototype, "qr.QR8bitByte");
 })(qr || (qr = {}));
-//# sourceMappingURL=QR8bitByte.js.map

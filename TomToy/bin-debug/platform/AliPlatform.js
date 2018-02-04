@@ -12,4 +12,3 @@ var AliPlatform = (function () {
     return AliPlatform;
 }());
 __reflect(AliPlatform.prototype, "AliPlatform");
-//# sourceMappingURL=AliPlatform.js.map

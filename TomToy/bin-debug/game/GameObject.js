@@ -72,4 +72,3 @@ var GameObject = (function (_super) {
     return GameObject;
 }(eui.Component));
 __reflect(GameObject.prototype, "GameObject");
-//# sourceMappingURL=GameObject.js.map

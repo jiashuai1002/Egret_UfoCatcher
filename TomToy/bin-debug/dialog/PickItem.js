@@ -45,4 +45,3 @@ var PickItem = (function (_super) {
     return PickItem;
 }(eui.ItemRenderer));
 __reflect(PickItem.prototype, "PickItem");
-//# sourceMappingURL=PickItem.js.map

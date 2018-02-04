@@ -27,4 +27,3 @@ var EgretExpandManager = (function () {
     return EgretExpandManager;
 }());
 __reflect(EgretExpandManager.prototype, "EgretExpandManager");
-//# sourceMappingURL=EgretExpandManager.js.map

@@ -53,4 +53,3 @@ var qr;
     qr.QRCode = QRCode;
     __reflect(QRCode.prototype, "qr.QRCode");
 })(qr || (qr = {}));
-//# sourceMappingURL=QRCode.js.map

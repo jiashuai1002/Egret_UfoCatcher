@@ -11,4 +11,3 @@ var Vector2 = (function () {
     return Vector2;
 }());
 __reflect(Vector2.prototype, "Vector2");
-//# sourceMappingURL=Vector2.js.map

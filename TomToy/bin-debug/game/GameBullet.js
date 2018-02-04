@@ -37,4 +37,3 @@ var GameBullet = (function (_super) {
     return GameBullet;
 }(egret.DisplayObjectContainer));
 __reflect(GameBullet.prototype, "GameBullet");
-//# sourceMappingURL=GameBullet.js.map

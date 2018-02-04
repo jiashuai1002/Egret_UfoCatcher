@@ -116,4 +116,3 @@ var BulletView = (function (_super) {
     return BulletView;
 }(eui.Component));
 __reflect(BulletView.prototype, "BulletView");
-//# sourceMappingURL=BulletView.js.map

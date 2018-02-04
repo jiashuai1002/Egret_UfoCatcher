@@ -29,4 +29,3 @@ var LoginScene = (function (_super) {
     return LoginScene;
 }(Scene));
 __reflect(LoginScene.prototype, "LoginScene");
-//# sourceMappingURL=LoginScene.js.map

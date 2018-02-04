@@ -18,4 +18,3 @@ var Scene = (function (_super) {
     return Scene;
 }(BaseView));
 __reflect(Scene.prototype, "Scene");
-//# sourceMappingURL=Scene.js.map

@@ -56,4 +56,3 @@ var LoginItem = (function (_super) {
     return LoginItem;
 }(eui.ItemRenderer));
 __reflect(LoginItem.prototype, "LoginItem");
-//# sourceMappingURL=LoginItem.js.map

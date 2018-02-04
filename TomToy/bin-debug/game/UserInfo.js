@@ -26,4 +26,3 @@ var UserInfo = (function (_super) {
     return UserInfo;
 }(UIComponent));
 __reflect(UserInfo.prototype, "UserInfo");
-//# sourceMappingURL=UserInfo.js.map

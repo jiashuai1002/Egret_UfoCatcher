@@ -67,4 +67,3 @@ var DailyTaskItem = (function (_super) {
     return DailyTaskItem;
 }(eui.ItemRenderer));
 __reflect(DailyTaskItem.prototype, "DailyTaskItem");
-//# sourceMappingURL=DailyTaskItem.js.map

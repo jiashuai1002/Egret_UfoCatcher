@@ -24,4 +24,3 @@ var OrderItem = (function (_super) {
     return OrderItem;
 }(eui.ItemRenderer));
 __reflect(OrderItem.prototype, "OrderItem");
-//# sourceMappingURL=OrderItem.js.map

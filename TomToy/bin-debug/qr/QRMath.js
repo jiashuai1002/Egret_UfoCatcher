@@ -43,4 +43,3 @@ var qr;
     qr.QRMath = QRMath;
     __reflect(QRMath.prototype, "qr.QRMath");
 })(qr || (qr = {}));
-//# sourceMappingURL=QRMath.js.map

@@ -7,4 +7,3 @@ var ChargeData = (function () {
     return ChargeData;
 }());
 __reflect(ChargeData.prototype, "ChargeData");
-//# sourceMappingURL=ChargeData.js.map

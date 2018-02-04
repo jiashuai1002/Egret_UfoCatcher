@@ -38,4 +38,3 @@ var DlgNotice = (function (_super) {
     return DlgNotice;
 }(Dialog));
 __reflect(DlgNotice.prototype, "DlgNotice");
-//# sourceMappingURL=DlgNotice.js.map

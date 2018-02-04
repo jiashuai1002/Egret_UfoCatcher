@@ -15,4 +15,3 @@ var Rect = (function () {
     return Rect;
 }());
 __reflect(Rect.prototype, "Rect");
-//# sourceMappingURL=Rect.js.map

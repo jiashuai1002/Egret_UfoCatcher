@@ -18,4 +18,3 @@ var DlgCustom = (function (_super) {
     return DlgCustom;
 }(Dialog));
 __reflect(DlgCustom.prototype, "DlgCustom");
-//# sourceMappingURL=DlgCustom.js.map

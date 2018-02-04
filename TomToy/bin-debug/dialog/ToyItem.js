@@ -39,4 +39,3 @@ var ToyItem = (function (_super) {
     return ToyItem;
 }(UIComponent));
 __reflect(ToyItem.prototype, "ToyItem");
-//# sourceMappingURL=ToyItem.js.map

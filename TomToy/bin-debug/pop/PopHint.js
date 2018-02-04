@@ -32,4 +32,3 @@ var PopHint = (function (_super) {
     return PopHint;
 }(PopWin));
 __reflect(PopHint.prototype, "PopHint");
-//# sourceMappingURL=PopHint.js.map

@@ -55,4 +55,3 @@ var InviteItem = (function (_super) {
     return InviteItem;
 }(eui.ItemRenderer));
 __reflect(InviteItem.prototype, "InviteItem");
-//# sourceMappingURL=InviteItem.js.map

@@ -209,4 +209,3 @@ var qr;
     qr.QRCodeModel = QRCodeModel;
     __reflect(QRCodeModel.prototype, "qr.QRCodeModel");
 })(qr || (qr = {}));
-//# sourceMappingURL=QRCodeModel.js.map

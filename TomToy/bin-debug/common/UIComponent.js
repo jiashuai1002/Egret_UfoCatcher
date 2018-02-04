@@ -20,4 +20,3 @@ var UIComponent = (function (_super) {
     return UIComponent;
 }(eui.Component));
 __reflect(UIComponent.prototype, "UIComponent");
-//# sourceMappingURL=UIComponent.js.map

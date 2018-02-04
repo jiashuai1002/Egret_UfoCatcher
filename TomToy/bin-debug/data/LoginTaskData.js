@@ -7,4 +7,3 @@ var LoginTaskData = (function () {
     return LoginTaskData;
 }());
 __reflect(LoginTaskData.prototype, "LoginTaskData");
-//# sourceMappingURL=LoginTaskData.js.map
