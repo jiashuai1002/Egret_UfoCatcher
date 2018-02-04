@@ -18,19 +18,19 @@ var FunctionButtons = (function (_super) {
     FunctionButtons.prototype.init = function () {
         this.bagBtn.setOnTap(function () {
             ViewManager.I.open(ViewName.DLG_BAG);
-            TDAPP.onEvent('点击背包', "点击");
+            window["tdStatistics"]('点击背包', "点击");
         });
         this.chargeBtn.setOnTap(function () {
             ViewManager.I.open(ViewName.DLG_CHARGE);
-            TDAPP.onEvent('点击充值', "点击");
+            window["tdStatistics"]('点击充值', "点击");
         });
         this.settingBtn.setOnTap(function () {
             ViewManager.I.open(ViewName.DLG_SETTING);
-            TDAPP.onEvent('点击设置', "点击");
+            window["tdStatistics"]('点击设置', "点击");
         });
         this.showBtn.setOnTap(function () {
             ViewManager.I.open(ViewName.DLG_SHOW);
-            TDAPP.onEvent('点击玩家秀', "点击");
+            window["tdStatistics"]('点击玩家秀', "点击");
         });
     };
     return FunctionButtons;

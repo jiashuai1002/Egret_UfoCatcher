@@ -67,4 +67,20 @@
 	<ns1:GameTimer id="gameTimer" y="86" skinName="skins.GameTimer" x="263"/>
 	<ns1:FailHint id="failHint" y="538.68" source="wordart_json.fail_hint1" horizontalCenter="0"/>
 	<ns1:LuckyHint id="luckyHint" y="759" skinName="skins.LuckyHint" x="319" anchorOffsetX="140" anchorOffsetY="124"/>
+	<ns1:Button id="customBtn" label="" anchorOffsetX="36.31" anchorOffsetY="31.73" width="66.99" height="68" visible="true" horizontalCenter="199.5" verticalCenter="-468">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="game_json.icon_custom"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<ns1:Button id="sprBtn" label="" anchorOffsetX="43.43" anchorOffsetY="33.59" width="80.32" height="72" visible="true" horizontalCenter="114" verticalCenter="-471">
+		<ns1:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="game_json.icon_sprgift"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
 </e:Skin>

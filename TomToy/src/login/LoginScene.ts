@@ -14,7 +14,7 @@ class LoginScene extends Scene {
 
 	private qqLogin() {
 		QQPlatform.login();
-		TDAPP.onEvent('点击QQ登录', "点击");
+		window["tdStatistics"]('点击QQ登录', "点击");
 	}
 
 	private wxLogin() {

@@ -55,6 +55,7 @@ class DlgBag extends Dialog {
 		HttpManager.post(HttpCmd.BAG_LIST, {
 			user_id: PlayerDataManager.get(PlayerDataKey.ID)
 		}, ret => {
+			console.log("背包返回数据",ret)
 			this.toys = ret.result.list;
 			check();
 		}, null, true);
@@ -72,11 +73,20 @@ class DlgBag extends Dialog {
 		var haveToy = this.toys.length > 0;
 		if (haveToy) {
 			for (let i = 0; i < this.toys.length; i++) {
+
+				//TODO   修改逻辑  ===>    用背包接口返回的数据;
+
 				let item = ObjectPool.pop("ToyItem") as ToyItem;
 				let toy = this.toys[i];
-				console.log(toy)
-				let data = DataManager.getToy(toy.pack_toy_id);
-				item.show(data, toy.pack_balance_num);
+				// let data = DataManager.getToy(toy.pack_toy_id);
+				// item.show(data, toy.pack_balance_num);
+				
+
+				//2018-02-03  by jiashuai  21:11
+				toy.name = this.toys[i].ut_name;
+				toy.icon = this.toys[i].ut_cover_img;
+				item.show(toy, toy.pack_balance_num);
+
 				this.toyGroup.addChild(item);
 			}
 		}

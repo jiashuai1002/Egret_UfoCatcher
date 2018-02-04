@@ -42,8 +42,12 @@ var GameScene = (function (_super) {
         this.bulletData.username = PlayerDataManager.get(PlayerDataKey.NAME);
         this.bulletData.avtar = PlayerDataManager.get(PlayerDataKey.HEAD);
         this.infoBtn.setOnTap(function () {
-            TDAPP.onEvent('点击抓娃娃信息', "点击");
+            window["tdStatistics"]('点击抓娃娃信息', "点击");
             ViewManager.I.open(ViewName.DLG_TOY_INFO, _this.roomId);
+        });
+        this.customBtn.setOnTap(function () {
+            window["tdStatistics"]('客服ICON', "点击");
+            ViewManager.I.open(ViewName.DLG_CUSTOM);
         });
         LocalDataManager.addDataListener(LocalDataKey.BULLET, function (value) {
             if (value) {
@@ -107,9 +111,9 @@ var GameScene = (function (_super) {
     };
     GameScene.prototype.start = function () {
         var _this = this;
-        TDAPP.onEvent('点击开始游戏', "点击");
+        window["tdStatistics"]('点击开始游戏', "点击");
         if (PlayerDataManager.get(PlayerDataKey.COIN) < this.price) {
-            TDAPP.onEvent('弹出充值弹框', "访问");
+            window["tdStatistics"]('弹出充值弹框', "访问");
             ViewManager.I.open(ViewName.DLG_CHARGE);
             ViewManager.I.open(ViewName.POP_HINT, "金币不足，请前去充值！");
             return;
@@ -212,7 +216,7 @@ var GameScene = (function (_super) {
         }
     };
     GameScene.prototype.pickRoom = function () {
-        TDAPP.onEvent('点击换一台', "点击");
+        window["tdStatistics"]('点击换一台', "点击");
         ViewManager.I.open(ViewName.DLG_CHOOSE_ROOM, this.roomId);
     };
     return GameScene;

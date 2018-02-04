@@ -1,4 +1,6 @@
 {
-    "server" : "http://h5test02.zhuoyi.com/hybrid_ufo_catcher/index.php",
-    "auth" : "http://h5test02.zhuoyi.com/hybrid_ufo_catcher/index.php/Home/UfoCatcher/index"
+    "server" : "http://money.zhuoyi.com/hybrid_ufo_catcher/index.php",
+    "auth" : "http://money.zhuoyi.com/hybrid_ufo_catcher/index.php/Home/UfoCatcher/index",
+    "server_wechat" : "http://money.yy845.com/hybrid_ufo_catcher/index.php",
+    "auth_wechat" : "http://money.yy845.com/hybrid_ufo_catcher/index.php/Home/UfoCatcher/index"
 }

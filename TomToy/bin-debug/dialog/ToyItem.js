@@ -21,13 +21,14 @@ var ToyItem = (function (_super) {
     };
     ToyItem.prototype.show = function (data, cnt) {
         var _this = this;
-        console.log("------------------------");
-        console.log(data);
         this.roomId = data.id;
         this.toy.text = data.name + " × " + cnt;
         this.icon.visible = false;
         DisplayUtils.loadImage(data.icon, function (tex) {
             _this.icon.texture = tex;
+            //限制背包内娃娃ICON的尺寸
+            _this.icon.width = 248;
+            _this.icon.height = 194;
             _this.icon.visible = true;
         });
     };

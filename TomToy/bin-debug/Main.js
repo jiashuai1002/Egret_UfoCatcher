@@ -80,7 +80,7 @@ var Main = (function (_super) {
             WxPlatform.preLoad();
             this.nextState();
             StageUtils.stage.once(egret.TouchEvent.TOUCH_TAP, function () {
-                SoundManager.I.playMusic("music_mp3");
+                SoundManager.I.playMusic("music1_mp3");
             }, this);
         }
     };
@@ -97,7 +97,7 @@ var Main = (function (_super) {
      */
     Main.prototype.loadData = function () {
         var _this = this;
-        TDAPP.onEvent('进入到加载页', "访问");
+        window["tdStatistics"]('进入到加载页', "访问");
         var user_id = LocalDataManager.get(LocalDataKey.ID);
         var cnt = 4;
         var check = function () {
@@ -108,34 +108,36 @@ var Main = (function (_super) {
             }
         };
         HttpManager.post(HttpCmd.ROOM_LIST, null, function (ret) {
-            console.log("all Ufos", ret);
+            // console.log("all Ufos", ret);
             DataManager.initRoom(ret.ufos);
             var randomNum = parseInt(ret.ufos.length * Math.random());
             _this.iRoomNum = ret.ufos[randomNum].uc_id || 1;
             check();
         }, null, true);
         HttpManager.post(HttpCmd.TOY_LIST, null, function (ret) {
-            console.log("all Toys", ret);
+            // console.log("all Toys", ret);
             DataManager.initToy(ret.toys);
             check();
         }, null, true);
         HttpManager.post(HttpCmd.USER, { user_id: user_id }, function (ret) {
             // console.log(ret)
-            // if (ret.result.return_code != 0) {
-            //     //判断用户是否在微信：1在  直接跳转微信授权操作； 2不在 其他登录逻辑；
-            //     if (PlayerShowData.isWechat()) {
-            //         WxPlatform.login();
-            //     } else {
-            //         ViewManager.I.open(ViewName.LOGIN);
-            //     }
-            // } else {
-            var user = ret.result.user;
-            PlayerDataManager.set(PlayerDataKey.ID, user.user_id);
-            PlayerDataManager.set(PlayerDataKey.NAME, user.nickname);
-            PlayerDataManager.set(PlayerDataKey.HEAD, user.avtar);
-            PlayerDataManager.set(PlayerDataKey.PHONE, user.phone);
-            check();
-            // }
+            if (ret.result.return_code != 0) {
+                //判断用户是否在微信：1在  直接跳转微信授权操作； 2不在 其他登录逻辑；
+                if (PlayerShowData.isWechat()) {
+                    WxPlatform.login();
+                }
+                else {
+                    ViewManager.I.open(ViewName.LOGIN);
+                }
+            }
+            else {
+                var user = ret.result.user;
+                PlayerDataManager.set(PlayerDataKey.ID, user.user_id);
+                PlayerDataManager.set(PlayerDataKey.NAME, user.nickname);
+                PlayerDataManager.set(PlayerDataKey.HEAD, user.avtar);
+                PlayerDataManager.set(PlayerDataKey.PHONE, user.phone);
+                check();
+            }
         }, null, true);
         HttpManager.post(HttpCmd.USER_CURRENCY, { user_id: user_id }, function (ret) {
             PlayerDataManager.set(PlayerDataKey.COIN, parseInt(ret.result.uc_balance));
@@ -155,12 +157,18 @@ var Main = (function (_super) {
      * 进入游戏
      */
     Main.prototype.enterGame = function () {
-        TDAPP.onEvent('QQ登录成功', "访问");
-        TDAPP.onEvent('进入娃娃机首页', "访问");
+        window["tdStatistics"]('QQ登录成功', "访问");
+        window["tdStatistics"]('进入娃娃机首页', "访问");
         ViewManager.I.close(ViewName.LOADING);
         ViewManager.I.open(ViewName.GAME, this.iRoomNum);
-        ViewManager.I.open(ViewName.DLG_NOTICE);
         window["openNewHelp"]();
+        var timer = setInterval(function () {
+            var flag = localStorage.getItem("isHelpTips") || '';
+            if (flag) {
+                ViewManager.I.open(ViewName.DLG_NOTICE);
+                clearInterval(timer);
+            }
+        }, 100);
     };
     return Main;
 }(eui.UILayer));

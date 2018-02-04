@@ -48,7 +48,7 @@ var ChargeItem = (function (_super) {
         else {
             ViewManager.I.doFunc(ViewName.DLG_CHARGE, "charge", this.data.ps_id);
         }
-        TDAPP.onEvent('充值按钮', "点击");
+        window["tdStatistics"]('充值按钮', "点击");
     };
     return ChargeItem;
 }(eui.ItemRenderer));

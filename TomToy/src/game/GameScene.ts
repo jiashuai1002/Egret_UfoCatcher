@@ -39,6 +39,7 @@ class GameScene extends Scene {
 	private bulletData: BulletData;
 
 	private infoBtn: Button;
+	private customBtn: Button;
 
 	public constructor() {
 		super();
@@ -68,9 +69,15 @@ class GameScene extends Scene {
 		this.bulletData.avtar = PlayerDataManager.get(PlayerDataKey.HEAD);
 
 		this.infoBtn.setOnTap(() => {
-			TDAPP.onEvent('点击抓娃娃信息', "点击");
+			window["tdStatistics"]('点击抓娃娃信息', "点击");
 			ViewManager.I.open(ViewName.DLG_TOY_INFO, this.roomId);
 		});
+
+		this.customBtn.setOnTap(() => {
+			window["tdStatistics"]('客服ICON', "点击");
+			ViewManager.I.open(ViewName.DLG_CUSTOM);
+		});
+
 
 		LocalDataManager.addDataListener(LocalDataKey.BULLET, value => {
 			if (value) {
@@ -139,9 +146,9 @@ class GameScene extends Scene {
 	}
 
 	private start() {
-		TDAPP.onEvent('点击开始游戏', "点击");
+		window["tdStatistics"]('点击开始游戏', "点击");
 		if (PlayerDataManager.get(PlayerDataKey.COIN) < this.price) {
-			TDAPP.onEvent('弹出充值弹框', "访问");
+			window["tdStatistics"]('弹出充值弹框', "访问");
 			ViewManager.I.open(ViewName.DLG_CHARGE);
 			ViewManager.I.open(ViewName.POP_HINT, "金币不足，请前去充值！");
 			return;
@@ -249,7 +256,7 @@ class GameScene extends Scene {
 	}
 
 	private pickRoom() {
-		TDAPP.onEvent('点击换一台', "点击");
+		window["tdStatistics"]('点击换一台', "点击");
 		ViewManager.I.open(ViewName.DLG_CHOOSE_ROOM, this.roomId);
 	}
 }

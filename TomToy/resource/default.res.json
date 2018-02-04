@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "lucky_fnt,bullet_json,config_json,game_json,ui_json,box_bg_png,box_front_png,box_glass_png,dlg_bg1_png,dlg_bg2_png,glass_png,dlg_bg3_png,title_bag_png,title_catch_png,title_bind_png,title_info_png,title_notice_png,title_login_png,title_gift_png,title_invite_png,title_task_png,title_charge_png,time_fnt,help_bg_png,player_show_head_png,title_show_png,wordart_json,music_mp3,move_mp3,fail_mp3,suc_mp3,start_mp3,loading_show_png,share_1_png,share_2_png,share_3_png,share_close_png,show_bg_png,share_close_1_png,title_faqs_png,player_show6_png,player_show1_png,player_show2_png,player_show3_png,player_show4_png,player_show5_png,player_show_head1_png,player_show_head2_png,player_show_head3_png,player_show_head4_png,player_show_head5_png,player_show_head6_png,pro_logo_png",
+			"keys": "lucky_fnt,bullet_json,config_json,ui_json,box_bg_png,box_front_png,box_glass_png,dlg_bg1_png,dlg_bg2_png,glass_png,dlg_bg3_png,title_bag_png,title_catch_png,title_bind_png,title_info_png,title_notice_png,title_login_png,title_gift_png,title_invite_png,title_task_png,title_charge_png,time_fnt,help_bg_png,player_show_head_png,title_show_png,wordart_json,move_mp3,fail_mp3,suc_mp3,start_mp3,loading_show_png,share_1_png,share_2_png,share_3_png,share_close_png,show_bg_png,share_close_1_png,title_faqs_png,player_show6_png,player_show1_png,player_show2_png,player_show3_png,player_show4_png,player_show5_png,player_show_head1_png,player_show_head2_png,player_show_head3_png,player_show_head4_png,player_show_head5_png,player_show_head6_png,pro_logo_png,music1_mp3,cunston_code_png,title_custom_png",
 			"name": "preload"
 		},
 		{
@@ -15,12 +15,6 @@
 			"subkeys": "add_off,add_on,arrow,bag_coin,bag_coin1,bag_tab1_off,bag_tab1_on,bag_tab2_off,bag_tab2_on,bear,btn,btn_bind,btn_close,btn_close1,btn_code,btn_draw,btn_finish,btn_help,btn_invite,btn_next,btn_pick,btn_quit,btn_share,btn_show,btn_sub,bullet_off,bullet_on,change_btn,coin,coin1,dlg_border1,dlg_border2,gift_hint,info_tab1_off,info_tab1_on,info_tab2_off,info_tab2_on,input,item_bg,line,music_off,music_on,new_gift_icon,pay_ali,pay_wx,room_bg,room_mask,share_banner,show_info_bg,show_name_bg,show_shadow,sub_off,sub_on,task_bar,task_bar_bg",
 			"type": "sheet",
 			"url": "atlas/ui.json"
-		},
-		{
-			"name": "game_json",
-			"subkeys": "bind,bullet_bg,catch,catch_tap,change,change_tap,cion,circle,coin_bg,cross,daily_gift,daily_task,em_down1,em_down2,em_down3,em_down4,em_down5,em_stay1,em_stay2,em_stay3,em_stay4,em_stay5,em_stay6,em_stay7,em_stay8,em_up1,em_up2,em_up3,em_up4,em_up5,full,gift_bg,hand,hand_line,hand_roof,hand_root,head,icon_bag,icon_recharge,icon_setting,icon_show,info_btn,invite,light_1,light_2,lucky,lucky_border,luckybar,luckybar_bg,new_gift,shadow,start,start_tap,time_bg,users_bg",
-			"type": "sheet",
-			"url": "atlas/game.json"
 		},
 		{
 			"name": "bullet_json",
@@ -169,11 +163,6 @@
 			"url": "atlas/wordart.json"
 		},
 		{
-			"name": "music_mp3",
-			"type": "sound",
-			"url": "sound/music.mp3"
-		},
-		{
 			"name": "move_mp3",
 			"type": "sound",
 			"url": "sound/move.mp3"
@@ -312,6 +301,27 @@
 			"name": "pro_logo_png",
 			"type": "image",
 			"url": "image/pro_logo.png"
+		},
+		{
+			"name": "music1_mp3",
+			"type": "sound",
+			"url": "sound/music1.mp3"
+		},
+		{
+			"name": "game_json",
+			"subkeys": "bind,bullet_bg,catch,catch_tap,change,change_tap,cion,circle,coin_bg,cross,daily_gift,daily_task,em_down1,em_down2,em_down3,em_down4,em_down5,em_stay1,em_stay2,em_stay3,em_stay4,em_stay5,em_stay6,em_stay7,em_stay8,em_up1,em_up2,em_up3,em_up4,em_up5,full,gift_bg,hand,hand_line,hand_roof,hand_root,head,icon_bag,icon_custom,icon_recharge,icon_setting,icon_show,icon_sprgift,info_btn,invite,light_1,light_2,lucky,lucky_border,luckybar,luckybar_bg,new_gift,shadow,start,start_tap,time_bg,users_bg",
+			"type": "sheet",
+			"url": "atlas/game.json"
+		},
+		{
+			"name": "cunston_code_png",
+			"type": "image",
+			"url": "image/cunston_code.png"
+		},
+		{
+			"name": "title_custom_png",
+			"type": "image",
+			"url": "image/title_custom.png"
 		}
 	]
 }

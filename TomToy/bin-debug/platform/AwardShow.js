@@ -17,7 +17,13 @@ var AwardShow = (function (_super) {
     }
     AwardShow.prototype.show = function (toyId, desc, qrcode) {
         var toyData = DataManager.getToy(toyId);
-        this.image.source = toyData.icon;
+        //炫耀一下页面 图片绘制跨域问题处理   ===> web部分做处理，替换域名。
+        if (PlayerShowData.isWechat()) {
+            this.image.source = toyData.icon.replace("money.zhuoyi.com", window.location.host);
+        }
+        else {
+            this.image.source = toyData.icon;
+        }
         // console.log('wawawawawawa')
         // console.log(toyData.icon)
         this.toy.text = toyData.name;

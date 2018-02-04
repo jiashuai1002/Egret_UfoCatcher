@@ -48,7 +48,6 @@ class DataManager {
 	}
 
 	public static getToy(id: number): ToyData {
-		console.log(this._toyDic)
 		return this._toyDic[id];
 	}
 

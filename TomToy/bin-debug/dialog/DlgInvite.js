@@ -52,7 +52,7 @@ var DlgInvite = (function (_super) {
     DlgInvite.prototype.show = function () {
     };
     DlgInvite.prototype.invite = function () {
-        TDAPP.onEvent('邀请好友-分享', "点击");
+        window["tdStatistics"]('邀请好友-分享', "点击");
         WxPlatform.share("xx", "xx");
         LocalDataManager.set(LocalDataKey.SHARE, true);
         this.check();

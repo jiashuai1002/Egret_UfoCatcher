@@ -20,6 +20,7 @@ var ViewManager = (function () {
             params[_i - 1] = arguments[_i];
         }
         var view = this.getView(name);
+        console.log(view);
         view.close.apply(view, params);
     };
     ViewManager.prototype.doFunc = function (name, funcName) {

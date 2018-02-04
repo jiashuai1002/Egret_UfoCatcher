@@ -21,7 +21,7 @@ var LoginScene = (function (_super) {
     };
     LoginScene.prototype.qqLogin = function () {
         QQPlatform.login();
-        TDAPP.onEvent('点击QQ登录', "点击");
+        window["tdStatistics"]('点击QQ登录', "点击");
     };
     LoginScene.prototype.wxLogin = function () {
         WxPlatform.login();

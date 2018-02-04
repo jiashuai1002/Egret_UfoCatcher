@@ -74,7 +74,7 @@ class Main extends eui.UILayer {
             WxPlatform.preLoad();
             this.nextState();
             StageUtils.stage.once(egret.TouchEvent.TOUCH_TAP, () => {
-                SoundManager.I.playMusic("music_mp3");
+                SoundManager.I.playMusic("music1_mp3");
             }, this);
         }
     }
@@ -92,7 +92,7 @@ class Main extends eui.UILayer {
      * 加载数据
      */
     private loadData() {
-        TDAPP.onEvent('进入到加载页', "访问");
+        window["tdStatistics"]('进入到加载页', "访问");
         var user_id = LocalDataManager.get(LocalDataKey.ID);
         var cnt = 4;
         var check = () => {
@@ -103,14 +103,14 @@ class Main extends eui.UILayer {
             }
         };
         HttpManager.post(HttpCmd.ROOM_LIST, null, ret => {
-            console.log("all Ufos", ret)
+            // console.log("all Ufos", ret);
             DataManager.initRoom(ret.ufos);
             var randomNum = parseInt(ret.ufos.length * Math.random());
             this.iRoomNum = ret.ufos[randomNum].uc_id || 1;
             check();
         }, null, true);
         HttpManager.post(HttpCmd.TOY_LIST, null, ret => {
-            console.log("all Toys", ret)
+            // console.log("all Toys", ret);
             DataManager.initToy(ret.toys);
             check();
         }, null, true);
@@ -152,11 +152,19 @@ class Main extends eui.UILayer {
      * 进入游戏
      */
     private enterGame() {
-        TDAPP.onEvent('QQ登录成功', "访问");
-        TDAPP.onEvent('进入娃娃机首页', "访问");
+        window["tdStatistics"]('QQ登录成功', "访问");
+        window["tdStatistics"]('进入娃娃机首页', "访问");
+        
         ViewManager.I.close(ViewName.LOADING);
         ViewManager.I.open(ViewName.GAME, this.iRoomNum);
-        ViewManager.I.open(ViewName.DLG_NOTICE);
         window["openNewHelp"]();
+        const timer = setInterval(function () {
+            const flag = localStorage.getItem("isHelpTips") || '';
+            if (flag) {
+                ViewManager.I.open(ViewName.DLG_NOTICE);
+                clearInterval(timer);
+            }
+        }, 100);
+        
     }
 }

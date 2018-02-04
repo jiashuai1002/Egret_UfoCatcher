@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.DlgCustom" width="640" height="1136" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image touchEnabled="false" source="dlg_bg1_png" anchorOffsetY="0" height="796" width="606" anchorOffsetX="0" y="260" horizontalCenter="0"/>
+	<e:Image y="330" scale9Grid="20,20,20,20" anchorOffsetY="0" height="702" anchorOffsetX="0" width="564" horizontalCenter="0" source="ui_json.dlg_border2"/>
+	<e:Image y="75.2" horizontalCenter="3.5" source="title_custom_png"/>
+	<ns1:Button id="closeBtn" label="" x="601" y="260" anchorOffsetX="44.83" anchorOffsetY="37">
+		<ns1:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+			<e:Image width="100%" height="100%" source="ui_json.btn_close"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</ns1:skinName>
+	</ns1:Button>
+	<e:Label text="公众号客服" y="381.33" size="30" textColor="0x996a38" bold="true" horizontalCenter="-3.5"/>
+	<e:Image touchEnabled="false" anchorOffsetY="40.14" height="278" width="276" anchorOffsetX="35.61" y="466.14" source="cunston_code_png" horizontalCenter="0"/>
+	<e:Label text="QQ客服： 1362 580 883" y="756" size="30" textColor="0x996A38" bold="true" horizontalCenter="-1.5"/>
+	<e:Label text="客服邮箱： ued2@droi.com" y="799.33" size="30" textColor="0x996A38" bold="true" horizontalCenter="4"/>
+	<e:Label text="汤姆娃娃机" y="865.33" size="30" textColor="0x996A38" bold="true" horizontalCenter="-166.5"/>
+	<e:Label text="QQ玩家群" y="864.33" size="30" bold="true" horizontalCenter="-16.5" textColor="0xfe57a4"/>
+	<e:Label text="：5857 43240" y="865.33" size="30" textColor="0x996A38" bold="true" horizontalCenter="151"/>
+	<e:Label text="客服服务时间： 9:00-18:00（节假日除外）" y="970.33" size="24" textColor="0x996A38" bold="true" horizontalCenter="1.5"/>
+</e:Skin>

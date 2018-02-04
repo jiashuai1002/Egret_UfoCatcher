@@ -5,7 +5,7 @@ var WxPlatform = (function () {
     function WxPlatform() {
     }
     WxPlatform.login = function () {
-        TDAPP.onEvent('微信授权登录', "访问");
+        window["tdStatistics"]('微信授权登录', "访问");
         var url = Config.server + HttpCmd.LOGIN_WX;
         window["jump"](url);
     };
@@ -36,8 +36,7 @@ var WxPlatform = (function () {
                 signType: pay.signType,
                 paySign: pay.paySign,
                 success: function (res) {
-                    console.log(res);
-                    TDAPP.onEvent('消费成功-id' + payId, "访问");
+                    window["tdStatistics"]('消费成功-id' + payId, "访问");
                     HttpManager.post(HttpCmd.USER_CURRENCY, { user_id: PlayerDataManager.get(PlayerDataKey.ID) }, function (ret) {
                         PlayerDataManager.set(PlayerDataKey.COIN, parseInt(ret.result.uc_balance));
                     });

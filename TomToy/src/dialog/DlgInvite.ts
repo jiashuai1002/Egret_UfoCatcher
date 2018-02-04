@@ -48,7 +48,7 @@ class DlgInvite extends Dialog {
 	}
 
 	private invite() {
-		TDAPP.onEvent('邀请好友-分享', "点击");
+		window["tdStatistics"]('邀请好友-分享', "点击");
 		WxPlatform.share("xx", "xx");
 		LocalDataManager.set(LocalDataKey.SHARE, true);
 		this.check();

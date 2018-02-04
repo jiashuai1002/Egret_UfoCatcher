@@ -15,13 +15,14 @@ class ToyItem extends UIComponent {
 	}
 
 	public show(data: ToyData, cnt: number) {
-		console.log("------------------------")
-		console.log(data)
 		this.roomId = data.id;
 		this.toy.text = data.name + " × " + cnt;
 		this.icon.visible = false;
 		DisplayUtils.loadImage(data.icon, tex => {
 			this.icon.texture = tex;
+			//限制背包内娃娃ICON的尺寸
+			this.icon.width = 248;
+			this.icon.height = 194;
 			this.icon.visible = true;
 		});
 	}

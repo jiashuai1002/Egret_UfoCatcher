@@ -31,6 +31,10 @@ declare module skins{
 	}
 }
 declare module skins{
+	class DlgCustom extends eui.Skin{
+	}
+}
+declare module skins{
 	class DlgDailyGift extends eui.Skin{
 	}
 }

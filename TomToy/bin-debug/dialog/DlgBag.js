@@ -40,6 +40,7 @@ var DlgBag = (function (_super) {
         HttpManager.post(HttpCmd.BAG_LIST, {
             user_id: PlayerDataManager.get(PlayerDataKey.ID)
         }, function (ret) {
+            console.log("背包返回数据", ret);
             _this.toys = ret.result.list;
             check();
         }, null, true);
@@ -55,11 +56,15 @@ var DlgBag = (function (_super) {
         var haveToy = this.toys.length > 0;
         if (haveToy) {
             for (var i = 0; i < this.toys.length; i++) {
+                //TODO   修改逻辑  ===>    用背包接口返回的数据;
                 var item = ObjectPool.pop("ToyItem");
                 var toy = this.toys[i];
-                console.log(toy);
-                var data = DataManager.getToy(toy.pack_toy_id);
-                item.show(data, toy.pack_balance_num);
+                // let data = DataManager.getToy(toy.pack_toy_id);
+                // item.show(data, toy.pack_balance_num);
+                //2018-02-03  by jiashuai  21:11
+                toy.name = this.toys[i].ut_name;
+                toy.icon = this.toys[i].ut_cover_img;
+                item.show(toy, toy.pack_balance_num);
                 this.toyGroup.addChild(item);
             }
         }

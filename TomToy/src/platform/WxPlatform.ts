@@ -3,7 +3,7 @@ class WxPlatform {
 	private static award: AwardShow;
 
 	public static login() {
-		TDAPP.onEvent('微信授权登录', "访问");
+		window["tdStatistics"]('微信授权登录', "访问");
 		var url = Config.server + HttpCmd.LOGIN_WX;
 		window["jump"](url);
 	}
@@ -12,7 +12,6 @@ class WxPlatform {
 		// var url = Config.server + HttpCmd.PAY + "?user_id="
 		// 	+ PlayerDataManager.get(PlayerDataKey.ID) + "&pay_channel=" + 6 + "&pay_id=" + payId;
 		// window["jump"](url);
-
 		HttpManager.post(HttpCmd.PAY, {
 			user_id: PlayerDataManager.get(PlayerDataKey.ID),
 			pay_channel: 6,
@@ -36,8 +35,7 @@ class WxPlatform {
 				signType: pay.signType,
 				paySign: pay.paySign,
 				success: function (res) {
-					console.log(res);
-					TDAPP.onEvent('消费成功-id' + payId, "访问");
+					window["tdStatistics"]('消费成功-id' + payId, "访问");
 					HttpManager.post(HttpCmd.USER_CURRENCY, { user_id: PlayerDataManager.get(PlayerDataKey.ID) }, ret => {
 						PlayerDataManager.set(PlayerDataKey.COIN, parseInt(ret.result.uc_balance));
 					});

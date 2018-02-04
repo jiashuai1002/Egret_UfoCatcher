@@ -20,6 +20,8 @@ class ViewName {
 	public static DLG_SHOW = "DlgShow";
 	public static DLG_CHARGE = "DlgCharge";
 	public static DLG_FAQS = "DlgFaqs";
+	public static DLG_CUSTOM = "DlgCustom";
+	public static DLG_SPRGIFT = "Dlg";
 
 
 	public static POP_HINT = "PopHint";

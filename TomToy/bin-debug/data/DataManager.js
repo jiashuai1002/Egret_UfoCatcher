@@ -47,7 +47,6 @@ var DataManager = (function () {
         });
     };
     DataManager.getToy = function (id) {
-        console.log(this._toyDic);
         return this._toyDic[id];
     };
     DataManager.initRoomToys = function () {

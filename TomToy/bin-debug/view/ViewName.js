@@ -23,6 +23,8 @@ var ViewName = (function () {
     ViewName.DLG_SHOW = "DlgShow";
     ViewName.DLG_CHARGE = "DlgCharge";
     ViewName.DLG_FAQS = "DlgFaqs";
+    ViewName.DLG_CUSTOM = "DlgCustom";
+    ViewName.DLG_SPRGIFT = "Dlg";
     ViewName.POP_HINT = "PopHint";
     ViewName.POP_ALERT = "PopAlert";
     return ViewName;

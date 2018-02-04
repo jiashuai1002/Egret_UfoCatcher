@@ -13,6 +13,7 @@ class ViewManager {
 
 	public close(name: string, ...params) {
 		var view = this.getView(name);
+		console.log(view)
 		view.close.apply(view, params);
 	}
 

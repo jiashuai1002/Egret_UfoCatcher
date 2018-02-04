@@ -13,7 +13,12 @@ class AwardShow extends eui.Component{
 
 	public show(toyId:number, desc: string, qrcode:egret.Texture){
 		var toyData = DataManager.getToy(toyId);
-		this.image.source = toyData.icon;
+		//炫耀一下页面 图片绘制跨域问题处理   ===> web部分做处理，替换域名。
+		if(PlayerShowData.isWechat()){
+			this.image.source = toyData.icon.replace("money.zhuoyi.com",window.location.host);
+		}else{
+			this.image.source = toyData.icon;
+		}
 		// console.log('wawawawawawa')
 		// console.log(toyData.icon)
 		this.toy.text = toyData.name;

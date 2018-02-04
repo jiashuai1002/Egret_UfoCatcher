@@ -6,14 +6,14 @@ var Config = (function () {
     }
     Object.defineProperty(Config, "server", {
         get: function () {
-            return this.data.server;
+            return PlayerShowData.isWechat() ? this.data.server_wechat : this.data.server;
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(Config, "auth", {
         get: function () {
-            return this.data.auth;
+            return PlayerShowData.isWechat() ? this.data.auth_wechat : this.data.auth;
         },
         enumerable: true,
         configurable: true
